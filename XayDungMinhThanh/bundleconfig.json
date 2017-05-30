@@ -1,0 +1,320 @@
+[
+  {
+    "outputFileName": "Scripts/BackEnd/Post/postController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Post/postController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Post/Post.min.html",
+    "inputFiles": [
+      "Scripts/BackEnd/Post/Post.html"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/CategoryPost/categorypostController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/CategoryPost/categorypostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Templates/Material/css/theme-default/bootstrap.min.css",
+    "inputFiles": [
+      "Content/Backend/Templates/Material/css/theme-default/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Templates/Material/css/theme-default/materialadmin.min.css",
+    "inputFiles": [
+      "Content/Backend/Templates/Material/css/theme-default/materialadmin.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Templates/Material/css/theme-default/libs/toastr/toastr.min.css",
+    "inputFiles": [
+      "Content/Backend/Templates/Material/css/theme-default/libs/toastr/toastr.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/CategoryPost/modifyCategoryPostController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/CategoryPost/modifyCategoryPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Post/modifyPostController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Post/modifyPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/InfoCompany/infoCompanyController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/InfoCompany/infoCompanyController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Home/homeController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Home/homeController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Footer/footerController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Footer/footerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/introController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/introController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/newsController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/newsController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/showNewsController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/showNewsController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/serviceController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/serviceController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/menuController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/menuController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/showServiceController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/showServiceController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/commitmentController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/commitmentController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/contactController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/contactController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Account/accountController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Account/accountController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Account/modifyAccountController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Account/modifyAccountController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Devextreme/Lib/css/dx.android5.light.min.css",
+    "inputFiles": [
+      "Content/Backend/Devextreme/Lib/css/dx.android5.light.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Devextreme/Lib/css/dx.common.min.css",
+    "inputFiles": [
+      "Content/Backend/Devextreme/Lib/css/dx.common.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/bootstrap.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/Controls.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/Controls.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/corev15.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/corev15.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/pagelayouts15.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/pagelayouts15.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/ShareBoot.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/ShareBoot.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/Theme.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/Theme.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/css/myStyle.min.css",
+    "inputFiles": [
+      "Content/Frontend/Theme/css/myStyle.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Frontend/Theme/js/bootstrap.min.js",
+    "inputFiles": [
+      "Content/Frontend/Theme/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/searchController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/searchController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Banner/bannerController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Banner/bannerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Banner/modifyBannerController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Banner/modifyBannerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Factory/aliasFactory.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Factory/aliasFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Factory/urlFactory.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Factory/urlFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Devextreme/Lib/css/dx.spa.min.css",
+    "inputFiles": [
+      "Content/Backend/Devextreme/Lib/css/dx.spa.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Templates/Site.min.css",
+    "inputFiles": [
+      "Content/Backend/Templates/Site.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Dashboard/dashboardController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Dashboard/dashboardController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/bannerController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/bannerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/BacSi/bacSiController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/BacSi/bacSiController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/BacSi/modifyBacSiController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/BacSi/modifyBacSiController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/doctorController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/doctorController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Video/modifyVIdeoController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Video/modifyVIdeoController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Video/videoController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Video/videoController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/videoController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/videoController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Gallery/galleryController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Gallery/galleryController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Gallery/showGalleryController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Gallery/showGalleryController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Backend/Vendors/ng-Gallery/dist/ng-image-gallery.min.js",
+    "inputFiles": [
+      "Content/Backend/Vendors/ng-Gallery/dist/ng-image-gallery.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Gallery/galleryController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Gallery/galleryController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/Gallery/modifyGalleryController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/Gallery/modifyGalleryController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/menuNew.min.css",
+    "inputFiles": [
+      "Content/Front/css/menuNew.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Home/menuController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Home/menuController.js"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+﻿.display-calc { background-color: #e8e8e8; color: #595959; padding-bottom: 20px; font-size: 12pt; font-weight: bold; }
+.display-quoterequest { padding-bottom: 20px; }
+
+.display-quoterequest .row, .display-calc .row { padding-top: 20px; }
+
+.pin-icon { display: inline; margin-right: 35px; }
+.pin-icon img { margin-right: 15px; }
+
+#link_get_widget {
+    display:none;
+}
+
+span.required:before { 
+   content:"* ";
+   color:red;
+}
+

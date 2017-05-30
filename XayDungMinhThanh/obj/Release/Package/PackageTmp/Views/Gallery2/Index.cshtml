@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Thư viện ảnh";
+}
+
+<div class="insurance" id="tin-tuc" ng-controller="galleryController" style="padding-bottom:0;">
+    <div class="container">
+        <h6>Thư viện ảnh</h6>
+        <div class="main">
+            <div class="gallery-bottom">
+                <div class="grid">
+                    <div class="row" style="margin-bottom:1em;">
+                        <p ng-hide="thuViens.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
+                        <div class="col-md-4 col-sm-6 col-xs-6 col-min-12 g-left" ng-repeat="(index, value) in thuViens" ng-show="thuViens.length > 0">
+                            <a href="/thu-vien-anh/{{value.alias}}-{{value.id}}" title="{{value.title}}">
+                                <figure class="effect-apollo">
+                                    <img ng-src="{{value.image}}" alt="{{value.title}}">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

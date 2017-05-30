@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/TTYT" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Project\\KNT\\TTYTQN\\XayDungMinhThanh\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Project\\KNT\\TTYTQN\\XayDungMinhThanh\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=.\SQL2012;initial catalog=TTYTQN;integrated security=true" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\TTYTQN\\XayDungMinhThanh\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MinhThanhEntities-Web.config Connection String" description="" value="metadata=res://*/Models.CMS.csdl|res://*/Models.CMS.ssdl|res://*/Models.CMS.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.\SQL2012;initial catalog=TTYTQN;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\TTYTQN\\XayDungMinhThanh\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MinhThanhEntities']/@connectionString" />
+  </parameter>
+</parameters>

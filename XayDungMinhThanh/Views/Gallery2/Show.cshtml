@@ -1,0 +1,13 @@
+﻿@model XayDungMinhThanh.Models.Gallery
+    @{ 
+        Layout = "~/Views/Shared/_LayoutNoBanner.cshtml";
+    }
+<input type="hidden" value="@Model.id" id="idGallery" />
+<div ng-controller="showGalleryController">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <p ng-hide="images.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
+            <ng-image-gallery images="images" methods="methods" conf="conf" thumbnails="thumbnails" thumb-size="thumbSize" inline="inline" bubbles="bubbles" bubble-size="bubbleSize" img-bubbles="imgBubbles" bg-close="bgClose" piracy="true" on-open="opened();" on-close="closed();" on-delete="delete(img, cb)" bg-close="false" ng-show="images.length > 0"></ng-image-gallery>
+        </div>
+    </div>
+</div>

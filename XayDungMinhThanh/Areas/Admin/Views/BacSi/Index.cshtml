@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Quản lý bác sĩ";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="bacSiController">
+    <!--Header Section-->
+    <div class="section-header">
+        <ol class="breadcrumb">
+            <li class="active text-uppercase">Quản lý bác sĩ</li>
+        </ol>
+    </div>
+
+    <!--Body-->
+    <div class="section-body">
+        @*<input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />*@
+        <div class="row">
+
+        </div>
+        <hr class="ruler-lg" />
+
+        <div class="card">
+            <div class="card-body">
+                @*<span us-spinner="{radius:15, width:4, length: 8}"></span>*@
+                <!--Category Post-->
+                <div class="col-md-12 col-sm-12 col-xs-12" id="post">
+                    <div id="gridContainer" dx-data-grid="gridBacSis" dx-item-alias="bacSi">
+                        <div data-options="dxTemplate:{ name:'cellTemplateImage' }">
+                            <img ng-src="{{bacSi.value}}" style="height: 200px" />
+                        </div>
+                    </div>
+                    <div dx-context-menu="contextMenuBacSi"></div>
+                </div>
+
+                <!--Popup Delete-->
+                <div class="popup" dx-popup="popupDeleteBacSi">
+                    <div data-options="dxTemplate: { name:'templateDeleteBacSi' }">
+                        <div style="text-align: center">{{titleDeleteBacSi}}</div>
+                        <br />
+                        <div dx-button="{ text: 'Có', icon: 'floppy', onClick: ConfirmDeleteBacSi, type: 'success' }"></div>
+                        <div dx-button="{ text: 'Không', icon: 'clear', onClick: CancelDeleteBacSi, type: 'danger' }"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

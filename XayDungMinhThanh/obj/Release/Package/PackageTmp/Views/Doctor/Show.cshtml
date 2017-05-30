@@ -1,0 +1,38 @@
+﻿@model XayDungMinhThanh.Models.BacSi
+@{
+    ViewBag.Title = Model.hoTen;
+}
+
+<div class="insurance" id="tin-tuc" ng-controller="doctorController">
+    <input type="hidden" value="@Model.id" id="id" />
+    <span us-spinner="{radius:15, width:4, length: 8}"></span>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                    <img ng-src="{{bacSi.image}}" alt="{{bacSi.hoTen}}" class="img">
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                    <div class="container" style="border-bottom:1px solid black">
+                        <h2>{{bacSi.hoTen}}</h2>
+                    </div>
+                    <hr>
+                    <ul class="container details">
+                        <li><p><i class="fa fa-map-marker" style="width:30px;"></i> {{bacSi.diaChi}}</p></li>
+                        <li><p><span class="fa fa-mobile" style="width:30px;"></span> <a href="tel:{{bacSi.sdt}}">{{bacSi.sdt}}</a></p></li>
+                        <li><p><span class="fa fa-calendar-check-o" style="width:30px;"></span> {{bacSi.ngaySinh | date:"dd/MM/yyyy"}}</p></li>
+                        <li ng-show="bacSi.gioiTinh == 2"><p><span class="fa fa-mars" style="width:30px;"></span> Nam</p></li>
+                        <li ng-show="bacSi.gioiTinh == 1"><p><span class="fa fa-venus" style="width:30px;"></span> Nữ</p></li>
+                        <li ng-show="bacSi.gioiTinh == 0"><p><span class="fa fa-transgender" style="width:30px;"></span> Không xác định</p></li>
+                        <li><p><span class="fa fa-briefcase" style="width:30px;"></span> {{bacSi.congViec}}</p></li>
+                        <li><p><span class="fa fa-user-secret" style="width:30px;"></span> {{bacSi.chucVu}}</p></li>
+                        <li><p><span class="fa fa-envelope" style="width:30px;"></span> <a href="mailto:{{bacSi.email}}">{{bacSi.email}}</a></p></li>
+                        <li><p><span class="fa fa-facebook" style="width:30px;"></span> <a href="{{bacSi.fb}}">{{bacSi.fb}}</a></p></li>
+                        <li><p><span class="fa fa-commenting-o" style="width:30px;"></span> <a href="{{bacSi.zalo}}">{{bacSi.zalo}}</a></p></li>
+                        <li><p><span class="fa fa-globe" style="width:30px;"></span> Thông tin khác:<p ng-bind-html="bacSi.thongTinKhac"></p></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
