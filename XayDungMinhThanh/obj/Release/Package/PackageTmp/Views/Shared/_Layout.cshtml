@@ -33,154 +33,194 @@
     <link rel="image_src" href='@((ViewBag.Image!=null)?ViewBag.Image:"")' />
 
     <!--Site-->
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @*
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
         <link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
 
     <!--Js-->
-    <script src="~/Content/Front/js/analytics.js"></script>
-    <script src="~/Content/Front/js/swfobject.min.js"></script>
+    @*<script src="~/Content/Front/js/analytics.js"></script>
+        <script src="~/Content/Front/js/swfobject.min.js"></script>*@
 
     <!--Css-->
-    <link href="~/Content/Front/css/style.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/global.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/divbox.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/bxslider.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/flexslider.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/menuNew.min.css" rel="stylesheet" />
+    @*
+        <link href="~/Content/Front/css/style.css" rel="stylesheet" />
+        <link href="~/Content/Front/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+        <link href="~/Content/Front/css/global.min.css" rel="stylesheet" />
+        <link href="~/Content/Front/css/divbox.css" rel="stylesheet" />
+        <link href="~/Content/Front/css/bxslider.min.css" rel="stylesheet" />
+        <link href="~/Content/Front/css/flexslider.css" rel="stylesheet" />
+        <link href="~/Content/Front/css/menuNew.min.css" rel="stylesheet" />*@
 
     <!--ng-Gallery-->
     <link href="~/Content/Backend/Vendors/ng-Gallery/dist/ng-image-gallery.min.css" rel="stylesheet" />
 
+    <!--Giao diện-->
+    <link href="~/Content/Front/css/default.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/sigplus.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/sexylightbox.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/boxplus.paging.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/boxplus.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/default(1).min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/default(2).min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/nsb-opac-inv.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/style.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/allmode-portal.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/style(1).min.css" rel="stylesheet" />
+
+    <link href="~/Content/Front/css/system.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/general.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/template.min.css" rel="stylesheet" />
+    <link href="~/Content/Front/css/template.responsive.min.css" rel="stylesheet" />
+
 </head>
-<body ng-app="front" class="cbp-spmenu-push">
-    <div class="col-md-12 col-xs-12 col-sm-12 lienHe">
-        <div class="col-md-6 col-xs-6 col-sm-12 pull-left">
-            <p class="diaChi"><i class="fa fa-street-view" style="color:#f44336;"></i> Tiền An, Quảng Yên, Quảng Ninh - <span style="color:#f44336;">Hotline: <a href="tel:">...</a></span></p>
-        </div>
-        <div class="col-md-6 col-xs-6 col-sm-12 right">
-            <p class="pull-right">
-                <a href="/lien-he" class="thongTin">Liên hệ</a>
-                <a href="/video" class="thongTin">Video</a>
-                <a href="/bac-si" class="thongTinFB"><i class="fa fa-facebook-f" style="padding:1em 1.2em;"></i></a>
-                <a href="/bac-si" class="thongTinYT"><i class="fa fa-youtube-play" style="padding:1em;"></i></a>
-            </p>
-        </div>
-    </div>
-    <div class="col-md-12 col-xs-12 col-sm-12" style="background: url(../../Content/Front/images/nen.jpg)  no-repeat center; background-size: cover;">
-        <div class="col-md-2 col-xs-12 col-sm-2 divLogo">
-            <img src="~/Content/Front/images/logo.jpg" class="img-responsive" />
-        </div>
-        <div class="col-md-10 col-xs-12 col-sm-10 pull-right tieuDeHeader">
-            <p class="tenBenhVien text-uppercase">Trung tâm y tế thị xã quảng yên</p>
-            <p class="luongY">"Lương y như từ mẫu"</p>
-        </div>
-    </div>
-    <div class="head_top header_admin">
-        <div class="bg_top">
-            <script>
-                function jsupdate(k, idclass, jscolor) {
-                    if (k == 0) $("." + idclass).css("background-color", "#" + jscolor);
-                    else if (k == 1) $("." + idclass).css("color", "#" + jscolor);
-                }
-            </script>
-        </div>
-    </div>
-    <div class="col-md-12 col-xs-12 col-sm-12 header-bottom" ng-controller="homeController">
-        <div class="container">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<body ng-app="front">
+    <div id="art-main">
+        <div class="art-sheet clearfix">
+            <header class="art-header clearfix" style="height:11em;">
+                <!-- begin nostyle -->
+                <div class="art-nostyle">
+                    <!-- begin nostyle content -->
+
+                    <div class="custom">
+                        <p><img src="~/Content/Front/images/header.jpg" border="0" alt="" class="img-responsive"></p>
+                    </div>
+                    <!-- end nostyle content -->
                 </div>
-                <!--/.navbar-header-->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="">
-                            <a href="@Url.Action("Index","Home")">trang chủ</a>
-                        </li>
-                        <li class="menu1">
-                            <a href="/gioi-thieu/gioi-thieu-6" class="scroll">giới thiệu</a>
-                            <ul class="menu2">
-                                <li ng-repeat="(index, value) in gioiThieus"><a href="/gioi-thieu/{{value.alias}}-{{value.id}}">{{value.title}}</a></li>
-                            </ul>
-                        </li>
-                        <li class="">
-                            <a href="/dich-vu/dich-vu-13">dịch vụ</a>
-                        </li>
-                        <li class="">
-                            <a href="/tin-tuc">tin tức</a>
-                        </li>
-                        <li class=""><a class="scroll" href="/thu-vien-anh">Thư Viện Ảnh</a></li>
-                        <li class=""><a class="scroll" href="/bac-si">Đội Ngũ Bác Sĩ</a></li>
-                        <li class=""><a class="scroll" href="/lien-he">liên hệ</a></li>
-                    </ul>
+                <!-- end nostyle -->
+
+                <div class="art-shapes">
+
                 </div>
+
+
+            </header>
+            <nav class="art-nav clearfix desktop-nav">
+
+                <ul class="art-hmenu">
+                    <li class="item-435 current active"><a class="" href="@Url.Action("Index","Home")">Trang Chủ</a></li>
+                    <li class="item-487 deeper parent">
+                        <a class="separator" href="#">Giới Thiệu</a>
+                        <ul>
+                            <li class="item-488"><a href="/bai-viet/lich-su-hinh-thanh-su-menh-va-tam-nhin-44">Lịch Sử Hình Thành, Sứ Mệnh và Tầm Nhìn</a></li>
+                            <li class="item-489"><a href="bai-viet/co-cau-to-chuc-45">Cơ cấu Tổ Chức</a></li>
+                            <li class="item-532"><a href="/bai-viet/so-do-benh-vien-46">Sơ Đồ Bệnh Viện</a></li>
+                            <li class="item-490"><a href="/bai-viet/lanh-dao-truong-cac-khoa-phong-47">Lãnh Đạo, Trưởng Các Khoa Phòng</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-529 deeper parent">
+                        <a class="separator" href="#">Tin Tức</a>
+                        <ul>
+                            <li class="item-531"><a href="/danh-muc-bai-viet/hoat-dong-cua-trung-tam-15">Tin Hoạt Động Trung Tâm</a></li>
+                            <li class="item-535"><a href="/danh-muc-bai-viet/hoat-dong-cua-doan-thanh-nien-16">Hoạt Động Đoàn Thanh Niên</a></li>
+                            <li class="item-558"><a href="/danh-muc-bai-viet/giao-duc-suc-khoe-17">Giáo dục sức khỏe</a></li>
+                            <li class="item-558"><a href="/danh-muc-bai-viet/tin-tuc-nganh-y-18">Tin tức ngành y</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-497 deeper parent">
+                        <a class="separator" href="#">Khoa Phòng</a>
+                        <ul>
+                            <li class="item-498 deeper parent">
+                                <a href="#">Khoa Lâm Sàng</a>
+                                <ul>
+                                    <li class="item-589"><a href="/bai-viet/khoa-rang-ham-mat-25">Khoa Răng - Hàm - Mặt</a></li>
+                                    <li class="item-588"><a href="/bai-viet/khoa-mat-26">Khoa Mắt</a></li>
+                                    <li class="item-590"><a href="/bai-viet/khoa-tai-mui-hong-27">Khoa Tai - Mũi - Họng</a></li>
+                                    <li class="item-500"><a href="/bai-viet/khoa-kham-benh-29">Khoa Khám Bệnh </a></li>
+                                    <li class="item-504"><a href="/bai-viet/khoa-san-30">Khoa Sản</a></li>
+                                    <li class="item-501"><a href="/bai-viet/khoa-hoi-suc-tich-cuc-chong-doc-31">Khoa Hồi sức tích cực - Chống Độc</a></li>
+                                    <li class="item-503"><a href="/bai-viet/khoa-nhi-32">Khoa Nhi</a></li>
+                                    <li class="item-505"><a href="/bai-viet/khoa-noi-lao-khoa-33">Khoa Nội - Lão khoa</a></li>
+                                    <li class="item-506"><a href="/bai-viet/khoa-ngoai-34">Khoa Ngoại</a></li>
+                                    <li class="item-507"><a href="/bai-viet/khoa-dong-y-35">Khoa Đông Y</a></li>
+                                    <li class="item-508"><a href="/bai-viet/khoa-phuc-hoi-chuc-nang-36">Khoa Phục Hồi Chức Năng</a></li>
+                                    <li class="item-510"><a href="/bai-viet/khoa-truyen-nhiem-37">Khoa Truyền Nhiễm</a></li>
+                                    <li class="item-502"><a href="/bai-viet/khoa-phau-thuat-hoi-suc-cap-cuu-38">Khoa Phẫu thuật Hồi Sức cấp cứu</a></li>
+                                </ul>
+                            </li>
+                            <li class="item-499 deeper parent">
+                                <a href="#">Khoa Cận Lâm Sàng</a>
+                                <ul>
+                                    <li class="item-515"><a href="/bai-viet/khoa-duoc-39">Khoa Dược</a></li>
+                                    <li class="item-516"><a href="/bai-viet/khoa-chuan-doan-hinh-anh-40">Khoa Chẩn Đoán Hình Ảnh</a></li>
+                                    <li class="item-518"><a href="/bai-viet/khoa-kiem-soat-nhiem-khuan-41">Khoa Kiểm soát nhiễm Khuẩn</a></li>
+                                    <li class="item-517"><a href="/bai-viet/khoa-xet-nghiem-42">Khoa Xét Nghiệm</a></li>
+                                </ul>
+                            </li>
+                            <li class="item-491 deeper parent">
+                                <a href="#">Phòng Ban</a>
+                                <ul>
+                                    <li class="item-492"><a href="/bai-viet/phong-to-chuc-can-bo-43">Phòng Tổ Chức cán bộ</a></li>
+                                    <li class="item-493"><a href="/bai-viet/phong-ke-hoach-tong-hop-48">Phòng Kế Hoạch tổng hợp</a></li>
+                                    <li class="item-494"><a href="/bai-viet/phong-hanh-chinh-quan-tri-49">Phòng Hành Chính Quản Trị</a></li>
+                                    <li class="item-495"><a href="/bai-viet/phong-hanh-chinh-ke-toan-50">Phòng Tài chính kế toán</a></li>
+                                    <li class="item-496"><a href="/bai-viet/phong-dieu-duong-51">Phòng Điều Dưỡng</a></li>
+                                    <li class="item-594"><a href="/bai-viet/phong-quan-ly-chat-luong-52">Phòng Quản lý chất lượng Bệnh viện</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-583 deeper parent">
+                        <a href="#">Danh Mục</a>
+                        <ul>
+                            <li class="item-547"><a href="/bai-viet/danh-muc-ky-thuat-36" target="_blank">Danh Mục Kỹ Thuật</a></li>
+                            <li class="item-581"><a href="/bai-viet/phac-do-dieu-tri-59">Phác Đồ Điều Trị</a></li>
+                            <li class="item-584"><a href="/bai-viet/gia-vien-phi-60">Giá Viện Phí</a></li>
+                            <li class="item-586"><a href="/bai-viet/gia-vat-tu-y-te-61">Giá Vật Tư Y Tế</a></li>
+                            <li class="item-591"><a href="/bai-viet/danh-muc-thuoc-62">Danh Mục Thuốc</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
-        </div>
-    </div>
-    <div class="col-md-12 col-xs-12 col-sm-12 banner">
-        <section class="slider container" style="margin:0;width:100%;">
-            <div class="flexslider">
+            <!-- begin nostyle -->
+            <div class="art-nostyle">
+                <!-- begin nostyle content -->
+                <div class="breadcrumbs">
+                </div>
+                <!-- end nostyle content -->
+            </div>
+            <!-- end nostyle -->
+            <div class="art-layout-wrapper clearfix">
+                @RenderBody()
+                <footer class="art-footer clearfix">
+                    <!-- begin nostyle -->
+                    <div class="art-nostyle">
+                        <!-- begin nostyle content -->
 
-                <div class="flex-viewport" style="overflow: hidden; position: relative;">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" ng-controller="bannerController">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="{{index}}" ng-class="{'active':index==0}" ng-repeat="(index, value) in banners"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item " ng-class="{'active':index==0}" ng-repeat="(index, value) in banners">
-                                <img ng-src="{{value.image}}" class="img-responsive bannerMain" style="width:100%;" />
-                                <div class="carousel-caption bannerText">
-                                    <a href="{{value.link}}" class="bannerTitle" style="margin-bottom:0.5em;">{{value.title}}</a>
-                                    <p class="bannerContent">{{value.description}}</p>
-                                </div>
-                            </div>
+                        <div class="custom">
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
+                                <span style="font-family: &#39;times new roman&#39;, times; color: #ffffff;">
+                                    <strong>
+                                        <span style="font-size: small;">TRANG THÔNG TIN ĐIỆN TỬ TRUNG TÂM Y TẾ QUẢNG YÊN</span>
+                                    </strong>
+                                </span>
+                            </p>
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
+                                <span style="font-size: small; color: #ffffff;">Giấy phép số:15/GP-STTTT do Sở Thông tin Truyền thông Quảng Ninh cấp ngày 22/12/2014</span>
+                            </p>
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
+                                <span style="font-size: small; color: #ffffff;">Chịu trách nhiệm chính:  - Giám đốc Bệnh viện&nbsp;</span>
+                            </p>
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
+                                <span style="color: #ffffff;">Địa chỉ: Tiền An - Quảng Yên - Quảng Ninh</span>
+                            </p>
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
+                                <span style="color: #ffffff; font-size: small;">Điện Thoại: .....</span>
+                            </p>
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
+                                <span style="color: #ffffff; font-size: small;">Email: <a href="" style="text-align: justify;">...</a></span>
+                            </p>
+                            <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">&nbsp;</p>
                         </div>
+                        <!-- end nostyle content -->
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- <div id="conten"> -->
-    <article class="col-md-12 col-xs-12 col-sm-12" style="padding:0;">
-        @RenderBody()
-    </article>
-    <!-- </div> -->
-
-    <div class="col-md-12 col-xs-12 col-sm-12 footer" id="contact" style="padding:2em 0 0 0;">
-        <div class="container">
-            <h6>LIÊN HỆ</h6>
-            <div class="co-ntact">
-                <div class="contact-top contact-top-right">
-
-                    <div class="map">
-                        <a href="/lien-He"><img src="~/Content/Front/images/Dia chi.PNG" class="img-responsive" /></a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+                    <!-- end nostyle -->
+                </footer>
             </div>
 
-            <div class="copyright">
-                <p><span class="footer_copyright"><a target="_blank" href="https://www.facebook.com/KetnoitreJsc" alt="Thiết Kế Website" title="Thiết Kế Website" class="a_copyright">Thiết kế bởi Kết Nối Trẻ</a></span></p>
-            </div>
         </div>
     </div>
-
-    <a href="#" id="toTop">To Top</a>
-
-    @*<a id="back-to-top" href="#" style="display:block; position:fixed; overflow:hidden; right:5%; bottom:5%; z-index:9999;" class="btn btn-primary btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>*@
-
 
 
 
@@ -188,6 +228,74 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <!--Giao diện-->
+    <script src="~/Content/Front/js/all.min.js"></script>
+    <script src="~/Content/Front/js/analytics.js"></script>
+    <script src="~/Content/Front/js/ga.js"></script>
+    @*<script src="~/Content/Front/js/mootools-core.js"></script>*@
+    <script src="~/Content/Front/js/core.min.js"></script>
+    <script src="~/Content/Front/js/caption.min.js"></script>
+    <script src="~/Content/Front/js/mootools-more.min.js"></script>
+    <script src="~/Content/Front/js/jsapi.js"></script>
+    <script src="~/Content/Front/js/jquery.noconflict.min.js"></script>
+    <script src="~/Content/Front/js/jquery.easing.min.js"></script>
+    <script src="~/Content/Front/js/jquery.include.min.js"></script>
+    <script src="~/Content/Front/js/sexylightbox.min.js"></script>
+    <script src="~/Content/Front/js/boxplus.carousel.min.js"></script>
+    <script src="~/Content/Front/js/boxplus.lang.min.js"></script>
+    @*<script src="~/Content/Front/js/jquery.min.js(1)" type="text/javascript"></script>*@
+    <script src="~/Content/Front/js/allmode-portal.min.js"></script>
+    <script src="~/Content/Front/js/jsmart.noconflict.min.js"></script>
+    <script type="text/javascript">
+            window.addEvent('load', function () {
+                new JCaption('img.caption');
+            });
+            jQuery.noConflict();
+            jQuery(document).ready(function () {
+                jQuery('#backtotop').click(function () {
+                    jQuery('body,html').animate({ scrollTop: 0 }, 800);
+                });
+            });
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() != 0) {
+                    jQuery('#backtotop').fadeIn();
+                } else {
+                    jQuery('#backtotop').fadeOut();
+                }
+            });
+            if (typeof (__jQuery__) == "undefined") { var __jQuery__ = jQuery; }
+            __jQuery__(document).ready(function () {
+                SexyLightbox.initialize(__jQuery__.extend({}, { imagesdir: "/plugins/content/sigplus/engines/sexylightbox/css", color: "white" }));
+                __jQuery__("#sigplus_1ca598e5573d6204759fecf7c270566a ul:first").boxplusCarousel(__jQuery__.extend({}, { rtl: false, orientation: "horizontal", navigation: "bottom", showButtons: false, showLinks: false, showOverlayButtons: true, duration: 800, delay: 4000 })); __jQuery__.boxplusLanguage("vi", "VN");
+            });
+
+
+
+            function golink(target, id) {
+
+                var link = document.forms['jlink' + id].add.value;
+
+                switch (target) {
+                    case 'parent':
+                        window.location = link;
+                        break;
+                    case 'newwith':
+                        window.open(link);
+                        break;
+
+                    case 'newwithout':
+                        window.open(link, '', 'toolbar=no');
+                        break;
+                    default:
+                        alert('oops!!');
+                }
+
+            }
+            function keepAlive() { var myAjax = new Request({ method: "get", url: "index.php" }).send(); } window.addEvent("domready", function () { keepAlive.periodical(3600000); });
+    </script>
+    <!-- start - swMenuFree 8.3_J2.5-J3.0 javascript and CSS links -->
+    <script src="~/Content/Front/js/transmenu_Packed.min.js"></script>
 
     <!--AngularJS-->
     <script src="~/Content/Backend/Vendors/angular-1.6.3/angular.min.js"></script>
@@ -213,6 +321,7 @@
     <!--Home-->
     <script src="~/Scripts/FrontEnd/Home/homeController.min.js"></script>
     <script src="~/Scripts/FrontEnd/Home/menuController.min.js"></script>
+    <script src="~/Scripts/FrontEnd/Home/sideBarController.min.js"></script>
 
     <script src="~/Scripts/FrontEnd/bannerController.min.js"></script>
 
@@ -235,5 +344,9 @@
     <script src="~/Scripts/FrontEnd/searchController.min.js"></script>
     <script src="~/Scripts/FrontEnd/doctorController.min.js"></script>
     <script src="~/Scripts/FrontEnd/videoController.min.js"></script>
+
+    <!--Bài viết-->
+    <script src="~/Scripts/FrontEnd/postController.min.js"></script>
+    <script src="~/Scripts/FrontEnd/categoryPostController.min.js"></script>
 </body>
 </html>

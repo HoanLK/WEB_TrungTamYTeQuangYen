@@ -316,5 +316,185 @@
     "inputFiles": [
       "Scripts/FrontEnd/Home/menuController.js"
     ]
+  },
+  {
+    "outputFileName": "Content/Front/css/allmode-portal.min.css",
+    "inputFiles": [
+      "Content/Front/css/allmode-portal.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/default(1).min.css",
+    "inputFiles": [
+      "Content/Front/css/default(1).css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/default(2).min.css",
+    "inputFiles": [
+      "Content/Front/css/default(2).css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/default.min.css",
+    "inputFiles": [
+      "Content/Front/css/default.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/general.min.css",
+    "inputFiles": [
+      "Content/Front/css/general.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/nsb-opac-inv.min.css",
+    "inputFiles": [
+      "Content/Front/css/nsb-opac-inv.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/sexylightbox.min.css",
+    "inputFiles": [
+      "Content/Front/css/sexylightbox.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/sigplus.min.min.css",
+    "inputFiles": [
+      "Content/Front/css/sigplus.min.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/style(1).min.css",
+    "inputFiles": [
+      "Content/Front/css/style(1).css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/style.min.css",
+    "inputFiles": [
+      "Content/Front/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/system.min.css",
+    "inputFiles": [
+      "Content/Front/css/system.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/template.min.css",
+    "inputFiles": [
+      "Content/Front/css/template.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/css/template.responsive.min.css",
+    "inputFiles": [
+      "Content/Front/css/template.responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/all.min.js",
+    "inputFiles": [
+      "Content/Front/js/all.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/allmode-portal.min.js",
+    "inputFiles": [
+      "Content/Front/js/allmode-portal.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/analytics.min.js",
+    "inputFiles": [
+      "Content/Front/js/analytics.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/caption.min.js",
+    "inputFiles": [
+      "Content/Front/js/caption.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/core.min.js",
+    "inputFiles": [
+      "Content/Front/js/core.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/ga.min.js",
+    "inputFiles": [
+      "Content/Front/js/ga.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/jquery.noconflict.min.js",
+    "inputFiles": [
+      "Content/Front/js/jquery.noconflict.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/jsmart.noconflict.min.js",
+    "inputFiles": [
+      "Content/Front/js/jsmart.noconflict.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/mootools-core.min.js",
+    "inputFiles": [
+      "Content/Front/js/mootools-core.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/mootools-more.min.js",
+    "inputFiles": [
+      "Content/Front/js/mootools-more.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/script.min.js",
+    "inputFiles": [
+      "Content/Front/js/script.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/script.responsive.min.js",
+    "inputFiles": [
+      "Content/Front/js/script.responsive.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/sexylightbox.min.min.js",
+    "inputFiles": [
+      "Content/Front/js/sexylightbox.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Front/js/transmenu_Packed.min.js",
+    "inputFiles": [
+      "Content/Front/js/transmenu_Packed.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/postController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/postController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/categoryPostController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/categoryPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Home/sideBarController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Home/sideBarController.js"
+    ]
   }
 ]

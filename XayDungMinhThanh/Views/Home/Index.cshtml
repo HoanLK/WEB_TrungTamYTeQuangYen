@@ -2,169 +2,553 @@
     ViewBag.Title = "Trang chủ";
 }
 
-<section class="content pad1" style="padding:0" ng-controller="homeController">
-    <div class="midle_main_idclass fix1200_cus1">
-
-
-        <div class="about" id="about">
-            <div class="container">
-                <h6>Trung tâm y tế Quảng Yên</h6>
-                <div class="about-left">
-                    <p>Trung tâm Y tế thị xã Quảng Yên được xây dựng đồng bộ, hiện đại, Áp dụng thành tự Công nghệ khoa học, Trung tâm đã triển khai hệ thống lấy số tự động, người bệnh không phải xếp hàng, xếp sổ như trước. Cùng với đội ngũ đón tiếp chuyên nghiệp và dàn máy móc, trang thiết bị hiện đại như Máy chụp cắt lớp CT, hệ thống mổ hiện đại,v..v.</p>
-                    <p>Bệnh nhân khi đến với Trung tâm y tế thị xã Quảng Yên đều được chăm sóc, thăm khám một quy trình bài bản, tận tụy. Luôn luôn lấy chữ Đức lên hàng đầu, các y bác sỹ của Trung tâm hết lòng tận tụy vì bệnh nhân. Tự nâng cao tay nghề, đam mê học hỏi để phát huy hết khả năng của mình trong nền y học nói chung.</p>
-                    <p>Nhận thấy y khoa là lĩnh lực có sự thay đổi không ngừng cho nên những năm qua chúng tôi luôn cử cán bộ, bác sĩ tham gia các lớp tập huấn, đào tạo ngắn hạn, hơn nữa luôn tiếp nhận, chuyển giao các kỹ thuật hỗ trợ chữa bệnh hiện nay, nhằm đạt kết quả hỗ trợ chữa trị tốt nhất, tiết kiệm tiền bạc cho người bệnh.</p>
-                    <p>Hơn nữa với tiêu chí xem bệnh nhân như người nhà, luôn lắng nghe tâm tư nguyện vọng của từng bệnh nhân, giải đáp những hoài nghi thắc mắc của người bệnh để khiến người bệnh thoải mái tâm lý, yên tâm hỗ trợ điều trị luôn là mục tiêu của đội ngũ y bác sĩ của chúng tôi.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="services" id="services">
-            <div class="container">
-                <h6>DỊCH VỤ</h6>
-                <p ng-hide="services.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
-                <div class="row" ng-show="services.length > 0">
-                    <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 " ng-repeat="(index, value) in services" ng-class="{'hidden-sm': index == 3}">
-                        <div class="services-left">
-                            <a href="/dich-vu/dich-vu/{{value.alias}}-{{value.id}}">
-                                <img ng-src="{{value.image}}" alt="{{value.title}}">
+<div class="art-content-layout" ng-controller="homeController">
+    <div class="art-content-layout-row">
+        <div class="art-layout-cell art-content clearfix">
+            <!-- begin nostyle -->
+            <div class="art-nostyle">
+                <!-- begin nostyle content -->
+                <div class="allmode_box allmode-portal ">
+                    <h3 class="allmode_name"><span>TIN TỨC - SỰ KIỆN</span></h3>
+                    <div class="allmode_topbox" ng-show="index == 0" ng-repeat="(index, value) in tinTucs">
+                        <div class="allmode_img">
+                            <a href="/bai-viet/{{value.alias}}-{{value.id}}">
+                                <img ng-src="{{value.image}}" width="340" height="200" alt="">
                             </a>
-
-                            <h3><a href="/dich-vu/dich-vu/{{value.alias}}-{{value.id}}">{{value.title}}</a></h3>
-                            <p>{{value.description}}</p>
-                            <a href="/dich-vu/dich-vu/{{value.alias}}-{{value.id}}" class="hvr-shutter-in-horizontal btn_xemchitiet">Xem ngay</a>
                         </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="fright-sanpham">
-                        <a class="hvr-shutter-in-horizontal btn_xemchitiet" href="/dich-vu/dich-vu-13">Xem thêm</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="insurance" id="tin-tuc" style="padding-bottom:0;">
-            <div class="container">
-                <h6><a href="/danh-muc-bai-viet/tin-tuc-3">Tin tức</a></h6>
-                <div class="main">
-                    <p ng-hide="featuredPosts.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
-                    <div class="row" ng-show="featuredPosts.length > 0">
-                        <div class="col-md-6 col-sm-6  content-bottom-top" ng-repeat="(index, value) in featuredPosts">
-                            <div class="dv-tintuc">
-                                <div class="dv-tinleft">
-                                    <a href="/tin-tuc/{{value.alias}}-{{value.id}}"><img class="img-responsive" ng-src="{{value.image}}" alt="{{value.title}}"></a>
-                                </div>
-                                <div class="dv-tinright">
-                                    <div class="tit"><a href="/tin-tuc/{{value.alias}}-{{value.id}}">{{value.title}}</a></div>
-                                    <p>{{value.description}}</p>
-                                    <div class="xemthem-r">
-                                        <a href="/tin-tuc/{{value.alias}}-{{value.id}}">» Xem ngay</a>
-                                    </div>
+                        <div class="allmode_topitem">
+                            <h3 class="allmode_title">
+                                <a href="/bai-viet/{{value.alias}}-{{value.id}}">{{value.title}}</a>
+                            </h3>
 
-                                </div>
-                                <div class="clear"></div>
+                            <div class="allmode_details">
+                                <span class="allmode_date">{{value.timePublished | date:"dd'-'MM'-'yyyy"}}</span>
                             </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="fright-tintuc" style="margin-bottom:1em;">
-                            <a class="hvr-shutter-in-horizontal btn_xemchitiet" href="/tin-tuc">Xem thêm</a>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
 
-            <div class="gallery" id="gallery">
-                <div class="container" style="padding:0;">
-                    <div class="gallery-top heading">
-                        <h6>Thư Viện Ảnh</h6>
+                            <div class="allmode_text">
+                                {{value.description | limitTo:120}}
+                            </div>
+
+                        </div>
+                        <div class="allmode_clear"></div>
                     </div>
-                    <div class="gallery-bottom">
-                        <div class="grid">
-                            <div class="col-md-12">
-                                <p ng-hide="thuViens.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
-                                <div class="col-md-4 col-sm-6 col-xs-6" ng-repeat="(index, value) in thuViens" ng-show="thuViens.length > 0">
-                                    <a href="/thu-vien-anh/{{value.alias}}-{{value.id}}" @*class="lightbox"*@ title="{{value.title}}">
-                                        <figure class="effect-apollo">
-                                            <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive">
-                                            <figcaption></figcaption>
-                                        </figure>
-                                    </a>
+
+                    <div id="allmode208" class="allmode_itemsbox">
+                        <ul class="allmode_items">
+                            <li class="allmode_item" style="display: list-item;" ng-show="index > 0" ng-repeat="(index, value) in tinTucs">
+                                <div class="allmode_img">
+                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}"><img ng-src="{{value.image}}" width="100" height="65" alt="{{value.title}}"></a>
                                 </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="fright-sanpham" ng-show="thuViens.length > 0">
-                                <a class="hvr-shutter-in-horizontal btn_xemchitiet" href="/thu-vien-anh">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ourteam" id="ourteam">
-                <div class="container">
-                    <h6>Ban lãnh đạo</h6>
-                    <p ng-hide="bacSis.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
-                    <ul class="ch-grid" ng-show="bacSis.length > 0">
 
-                        <li ng-repeat="(index, value) in bacSis" class="col-md-2">
-                            <a href="/bac-si/{{value.alias}}-{{value.id}}" class="lightbox"></a><div class="ch-item " style="background: url(&quot;{{value.image}}&quot;)  no-repeat center; background-size: cover;">
-                                <a href="/bac-si/{{value.alias}}-{{value.id}}" class="lightbox"></a>
-                                <div class="ch-info">
-                                    <a href="/bac-si/{{value.alias}}-{{value.id}}" class="lightbox"></a>
-                                    <div class="soci">
-                                        <a href="/bac-si/{{value.alias}}-{{value.id}}" class="lightbox"></a>
-                                        <h5>
-                                            <a href="mailto:{{value.email}}" style="font-size:1.5em;" title="Gửi mail" target="_blank"><i class="fa fa-envelope-o"></i></a>
-                                            <a href="tel:{{value.sdt}}" style="font-size:1.5em;" title="Gọi ngay" target="_blank"><i class="fa fa-phone"></i></a>
-                                            @*<a href="{{value.fb}}" style="font-size:1.5em;" title="liên hệ facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                                                <a href="{{value.zalo}}" style="font-size:1.5em;" title="Liên hệ zalo" target="_blank"><i class="fa fa-commenting-o"></i></a>*@
-                                            <a href="/bac-si/{{value.alias}}-{{value.id}}" style="font-size:1.5em;" title="Xem thông tin"><i class="fa fa-hand-o-right"></i></a>
-                                        </h5>
+                                <div class="allmode_right">
+                                    <h4 class="allmode_title">
+                                        <a href="/bai-viet/{{value.alias}}-{{value.id}}">{{value.title}}</a>
+                                    </h4>
 
+                                    <div class="allmode_details">
+                                        <span class="allmode_date">{{value.timePublished | date:"dd'-'MM'-'yyyy"}}</span>
                                     </div>
                                 </div>
-                            </div>
-                            <p style="color:#f44336;">{{value.chucVu}}</p>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                    <div class="fright-tintuc" ng-show="bacSis.length > 0">
-                        <a class="hvr-shutter-in-horizontal btn_xemchitiet" href="/bac-si">Xem thêm</a>
+                            </li>
+                        </ul>
                     </div>
-                    @*<div class="social">
-                            <h3>Follow Us</h3>
-                            <ul>
-                                <li><a href="https://www.facebook.com/KetnoitreJsc/?fref=ts" target="_blank"><i class="fa fa-facebok"> </i></a></li>
-                                <li><a href="" target="_blank"><i class="twiter"> </i></a></li>
-                                <li><a href="" target="_blank"><i class="goog"> </i></a></li>
-                                <li><a href="" target="_blank"><i class="inst"> </i></a></li>
-                                <li><a href="" target="_blank"><i class="te"> </i></a></li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>*@
-                </div>
+                    <script type="text/javascript">
+                        jQuery.noConflict();
+                        jQuery(document).ready(function($){
+                            $('#allmode208').pajinate({
+                                items_per_page : 5,
+                                nav_label_prev : 'PREV',
+                                nav_label_next : 'NEXT'
+                            });
+                        });
+                    </script>
+                </div><!-- end nostyle content -->
             </div>
-            <div class="gallery" id="gallery">
-                <div class="container" style="padding:0;">
-                    <div class="gallery-top heading">
-                        <h6>Danh sách video</h6>
-                    </div>
-                    <div class="gallery-bottom">
-                        <div class="grid">
-                            <div class="col-md-12">
-                                <p ng-hide="videos.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
-                                <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="(index, value) in videos" ng-show="videos.length > 0">
-                                    <iframe width="100%" height="100%" src={{value.link}} frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="fright-sanpham" ng-show="videos.length > 0">
-                                <a class="hvr-shutter-in-horizontal btn_xemchitiet" href="/video">Xem thêm</a>
-                            </div>
+            <!-- end nostyle -->
+            <!-- begin nostyle -->
+            <div class="art-nostyle">
+                <!-- begin nostyle content -->
+                <div id="yt-mega-news_156" class="yt_mega_news">
+                    <div class="intro_text" style="width:705px"></div>
+                    <div id="ytc_tabs156" class="theme3">
+                        <div style="max-width: 705px; width: 705px; float:left; margin-bottom: 20px">
+                            <div class="content_box" style="max-width: 705px; width: 705px; ">
+                                <div class="tabs">
+                                    <div class="category_title_left">&nbsp;</div>
+                                    <div class="category_title_center">
+                                        <div class="category_name">
+                                            <a href="/danh-muc-bai-viet/hoat-dong-cua-trung-tam-15" target="_self">
+                                                HOẠT ĐỘNG TRUNG TÂM
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="category_title_right">&nbsp;&nbsp;&nbsp; </div>
+                                </div> <!--end tabs-->
+                                <div class="box-wrapper">
+                                    <div class="content-box current" style="max-width: 695px; width: 695px; ">
+                                        <p ng-hide="hoatDongTTs.length > 0" style="text-align:center; font-size:2em !important; color:#f44336">Đang cập nhật</p>
+                                        <div class="inner_content" style="max-width: 705px; width: 705px; overflow: hidden " ng-show="hoatDongTTs.length > 0">
+
+                                            <div class="normal-content">
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index <= 1" ng-repeat="(index, value) in hoatDongTTs">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" width="100px" height="100px">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+                                            <div class="normal-content" style="max-width:705 px; width: 705px; ">
+
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index > 1 && index <= 3" ng-repeat="(index, value) in hoatDongTTs">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" width="100px;" height="100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+
+                                        </div>  <!--end inner-content-->
+
+                                        <div class="link_category" ng-show="hoatDongTTs.length > 0">
+                                            <div class="arrow1"> &nbsp;</div>
+                                            <a href="/danh-muc-bai-viet/hoat-dong-cua-trung-tam-15" target="_self">
+                                                Xem thêm bài khác
+                                            </a>
+
+                                        </div>
+
+
+                                    </div> <!--end content-box-->
+                                </div> <!-- END Box Wrapper -->
+                            </div> <!--end box-->
                         </div>
 
+
+                    </div><!--end theme3-->
+
+                    <div class="footer_text" style="width:705px"></div>
+                </div>
+                <!-- end nostyle content -->
+            </div>
+            <!-- end nostyle -->
+            <!-- begin nostyle -->
+            <div class="art-nostyle">
+                <!-- begin nostyle content -->
+                <div id="yt-mega-news_167" class="yt_mega_news">
+                    <div class="intro_text" style="width:705px"></div>
+                    <div id="ytc_tabs167" class="theme3">
+                        <div style="max-width: 705px; width: 705px; float:left; margin-bottom: 20px">
+                            <div class="content_box" style="max-width: 705px; width: 705px; ">
+                                <div class="tabs">
+                                    <div class="category_title_left">&nbsp;</div>
+                                    <div class="category_title_center">
+                                        <div class="category_name">
+                                            <a href="/danh-muc-bai-viet/hoat-dong-cua-doan-thanh-nien-16" target="_self">
+                                                HOẠT ĐỘNG ĐOÀN THANH NIÊN
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="category_title_right">&nbsp;&nbsp;&nbsp; </div>
+                                </div> <!--end tabs-->
+                                <div class="box-wrapper">
+                                    <div class="content-box current" style="max-width: 695px; width: 695px; ">
+                                        <p ng-hide="hoatDongDoanThanhNien.length > 0" style="text-align:center; font-size:2em !important; color:#f44336">Đang cập nhật</p>
+                                        <div class="inner_content" style="max-width: 705px; width: 705px; overflow: hidden " ng-show="hoatDongTTs.length > 0">
+
+                                            <div class="normal-content">
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index <= 1" ng-repeat="(index, value) in hoatDongDoanThanhNien">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" width=" 100px;" height=" 100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+                                            <div class="normal-content" style="max-width:705 px; width: 705px; ">
+
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index > 1 && index <= 3" ng-repeat="(index, value) in c">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" width=" 100px;" height=" 100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+
+                                        </div>  <!--end inner-content-->
+
+                                        <div class="link_category" ng-show="hoatDongDoanThanhNien.length > 0">
+                                            <div class="arrow1"> &nbsp;</div>
+                                            <a href="/danh-muc-bai-viet/hoat-dong-cua-doan-thanh-nien-16" target="_self">
+                                                Xem thêm bài khác
+                                            </a>
+
+                                        </div>
+
+
+                                    </div> <!--end content-box-->
+                                </div> <!-- END Box Wrapper -->
+                            </div> <!--end box-->
+                        </div>
+
+
+                    </div><!--end theme3-->
+
+                    <div class="footer_text" style="width:705px"></div>
+                </div>
+                <!-- end nostyle content -->
+            </div>
+            <!-- end nostyle -->
+            <!-- begin nostyle -->
+            <div class="art-nostyle">
+                <!-- begin nostyle content -->
+                <div id="yt-mega-news_197" class="yt_mega_news">
+                    <div class="intro_text" style="width:705px"></div>
+                    <div id="ytc_tabs197" class="theme3">
+                        <div style="max-width: 705px; width: 705px; float:left; margin-bottom: 20px">
+                            <div class="content_box" style="max-width: 705px; width: 705px; ">
+                                <div class="tabs">
+                                    <div class="category_title_left">&nbsp;</div>
+                                    <div class="category_title_center">
+                                        <div class="category_name">
+                                            <a href="/danh-muc-bai-viet/tin-tuc-nganh-y-18" target="_self">
+                                                TIN TỨC NGÀNH Y
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="category_title_right">&nbsp;&nbsp;&nbsp; </div>
+                                </div> <!--end tabs-->
+                                <div class="box-wrapper">
+                                    <div class="content-box current" style="max-width: 695px; width: 695px; ">
+                                        <p ng-hide="tinTucNganhYs.length > 0" style="text-align:center; font-size:2em !important; color:#f44336">Đang cập nhật</p>
+                                        <div class="inner_content" style="max-width: 705px; width: 705px; overflow: hidden " ng-show="tinTucNganhYs.length > 0">
+
+                                            <div class="normal-content">
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index <= 1" ng-repeat="(index, value) in tinTucNganhYs">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" width=" 100px;" height=" 100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+                                            <div class="normal-content" style="max-width:705 px; width: 705px; ">
+
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index > 1 && index <= 3" ng-repeat="(index, value) in tinTucNganhYs">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.title}}" width=" 100px;" height=" 100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+
+                                        </div>  <!--end inner-content-->
+
+                                        <div class="link_category" ng-show="tinTucNganhYs.length > 0">
+                                            <div class="arrow1"> &nbsp;</div>
+                                            <a href="/danh-muc-bai-viet/tin-tuc-nganh-y-18" target="_self">
+                                                Xem thêm bài khác
+                                            </a>
+
+                                        </div>
+
+
+                                    </div> <!--end content-box-->
+                                </div> <!-- END Box Wrapper -->
+                            </div> <!--end box-->
+                        </div>
+
+
+                    </div><!--end theme3-->
+
+                    <div class="footer_text" style="width:705px"></div>
+                </div>
+                <!-- end nostyle content -->
+            </div>
+            <!-- end nostyle -->
+            <!-- begin nostyle -->
+            <div class="art-nostyle">
+                <!-- begin nostyle content -->
+                <div id="yt-mega-news_178" class="yt_mega_news">
+                    <div class="intro_text" style="width:705px"></div>
+                    <div id="ytc_tabs178" class="theme3">
+                        <div style="max-width: 705px; width: 705px; float:left; margin-bottom: 20px">
+                            <div class="content_box" style="max-width: 705px; width: 705px; ">
+                                <div class="tabs">
+                                    <div class="category_title_left">&nbsp;</div>
+                                    <div class="category_title_center">
+                                        <div class="category_name">
+                                            <a href="/danh-muc-bai-viet/giao-duc-suc-khoe-17" target="_self">
+                                                Giáo dục sức khỏe
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="category_title_right">&nbsp;&nbsp;&nbsp; </div>
+                                </div> <!--end tabs-->
+                                <div class="box-wrapper">
+                                    <div class="content-box current" style="max-width: 695px; width: 695px; ">
+                                        <p ng-hide="giaoDucSucKhoes.length > 0" style="text-align:center; font-size:2em !important; color:#f44336">Đang cập nhật</p>
+                                        <div class="inner_content" style="max-width: 705px; width: 705px; overflow: hidden " ng-show="giaoDucSucKhoes.length > 0">
+
+                                            <div class="normal-content">
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index <= 1" ng-repeat="(index, value) in giaoDucSucKhoes">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" alt="{{value.title}}" width=" 100px;" height=" 100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+                                            <div class="normal-content" style="max-width:705 px; width: 705px; ">
+
+                                                <div class="content" style="max-width: 342.5px; width: 342.5px;" ng-show="index > 1 && index <= 3" ng-repeat="(index, value) in giaoDucSucKhoes">
+                                                    <div class="article" style="overflow: hidden; margin-right: 10px; max-width: 332.5px; width: 332.5px;">
+                                                        <div class="article_title">
+                                                            <a style="color:#145cae;" href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                {{value.title}}
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="col-two col" style="overflow: hidden; max-width: 332.5px; width: 332.5px;">
+                                                            <div class="image" style="width: 100px; height: 100px">
+
+                                                                <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
+                                                                    <img ng-src="{{value.image}}" alt="{{value.title}}" width=" 100px;" height=" 100px;">
+                                                                </a>
+
+                                                            </div><!--end image-->
+
+                                                            <div class="sub-content">
+                                                                <div class="sub_content">
+                                                                    {{value.description | limitTo:120}}
+                                                                </div><!--end sub_content-->
+
+
+                                                                <div class="read_more">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self"> </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--end article-->
+                                                </div> <!-- end content-->
+                                            </div>
+
+                                        </div>  <!--end inner-content-->
+
+                                        <div class="link_category" ng-show="giaoDucSucKhoes.length > 0">
+                                            <div class="arrow1"> &nbsp;</div>
+                                            <a href="/danh-muc-bai-viet/giao-duc-suc-khoe-17" target="_self">
+                                                Xem thêm bài khác
+                                            </a>
+
+                                        </div>
+
+
+                                    </div> <!--end content-box-->
+                                </div> <!-- END Box Wrapper -->
+                            </div> <!--end box-->
+                        </div>
+
+
+                    </div><!--end theme3-->
+
+                    <div class="footer_text" style="width:705px"></div>
+                </div>
+                <!-- end nostyle content -->
+            </div>
+            <!-- end nostyle -->
+            <article class="art-post art-messages" style="display: none;">
+                <div class="art-postcontent clearfix">
+                    <div id="system-message-container">
                     </div>
                 </div>
-            </div>
+            </article><div class="blog-featured"></div>
+
         </div>
+        @Html.Partial("_Sidebar")
     </div>
-</section>
+</div>
+<!-- begin nostyle -->
+<div class="art-nostyle">
+    <!-- begin nostyle content -->
+    <div class="moduletable_inner backtotop_wrp">
+        <img id="backtotop" class="backtotop" src="./benhviendkkvcampha.vn - Trang Chủ_files/lendautrang.png" style="display: none;">
+
+    </div>
+
+    <!-- end nostyle content -->
+</div>
+<!-- end nostyle -->

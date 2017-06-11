@@ -229,8 +229,6 @@
     <Folder Include="Content\Backend\Templates\Joli\js\plugins\fileinput\fileinput\" />
     <Folder Include="Content\Backend\Templates\Material\js\core\cache\" />
     <Folder Include="Content\Backend\Vendors\angular-1.6.3\i18n\ngLocale\" />
-    <Folder Include="Content\Images\files\" />
-    <Folder Include="Content\Images\flash\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\BacSiAPIController.cs" />
@@ -290,8 +288,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaiVietController.cs" />
     <Compile Include="Controllers\CommitmentController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\DanhMucBaiVietController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\Gallery2Controller.cs" />
     <Compile Include="Controllers\IntroController.cs" />
@@ -4432,19 +4432,112 @@
     <Content Include="Content\Frontend\Theme\js\jasny-bootstrap.min.js" />
     <Content Include="Content\Frontend\Theme\js\jquery-1.8.2.min.js" />
     <Content Include="Content\Frontend\Theme\js\jquery.placeholder.min.js" />
-    <Content Include="Content\Front\css\bxslider.css" />
-    <Content Include="Content\Front\css\bxslider.min.css" />
-    <Content Include="Content\Front\css\divbox.css" />
-    <Content Include="Content\Front\css\flexslider.css" />
-    <Content Include="Content\Front\css\global.css" />
-    <Content Include="Content\Front\css\global.min.css" />
-    <Content Include="Content\Front\css\jquery.mCustomScrollbar.css" />
-    <Content Include="Content\Front\css\jquery.mCustomScrollbar.min.css" />
-    <Content Include="Content\Front\css\menuNew.css" />
-    <Content Include="Content\Front\css\menuNew.min.css">
-      <DependentUpon>menuNew.css</DependentUpon>
+    <Content Include="Content\Front\css\allmode-portal.css" />
+    <Content Include="Content\Front\css\allmode-portal.min.css">
+      <DependentUpon>allmode-portal.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\boxplus.carousel.min.css" />
+    <Content Include="Content\Front\css\boxplus.paging.min.css" />
+    <Content Include="Content\Front\css\default%281%29.css" />
+    <Content Include="Content\Front\css\default%281%29.min.css">
+      <DependentUpon>default%281%29.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\default%282%29.css" />
+    <Content Include="Content\Front\css\default%282%29.min.css">
+      <DependentUpon>default%282%29.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\default.css" />
+    <Content Include="Content\Front\css\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\general.css" />
+    <Content Include="Content\Front\css\general.min.css">
+      <DependentUpon>general.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\nsb-opac-inv.css" />
+    <Content Include="Content\Front\css\nsb-opac-inv.min.css">
+      <DependentUpon>nsb-opac-inv.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\sexylightbox.css" />
+    <Content Include="Content\Front\css\sexylightbox.min.css">
+      <DependentUpon>sexylightbox.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\sigplus.min.css" />
+    <Content Include="Content\Front\css\sigplus.min.min.css">
+      <DependentUpon>sigplus.min.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\style%281%29.css" />
+    <Content Include="Content\Front\css\style%281%29.min.css">
+      <DependentUpon>style%281%29.css</DependentUpon>
     </Content>
     <Content Include="Content\Front\css\style.css" />
+    <Content Include="Content\Front\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\system.css" />
+    <Content Include="Content\Front\css\system.min.css">
+      <DependentUpon>system.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\template.css" />
+    <Content Include="Content\Front\css\template.min.css">
+      <DependentUpon>template.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\css\template.responsive.css" />
+    <Content Include="Content\Front\css\template.responsive.min.css">
+      <DependentUpon>template.responsive.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\ImageNew\067903cf35d6b04b8ca2f874c9ca5eb5.jpeg" />
+    <Content Include="Content\Front\ImageNew\1.png" />
+    <Content Include="Content\Front\ImageNew\11c2c2c556f7018b3113e012f684b393.jpeg" />
+    <Content Include="Content\Front\ImageNew\18402933_1361779057243943_2524110559629355365_n.jpg" />
+    <Content Include="Content\Front\ImageNew\189b5315863ca80c0ea7eb09132f7c6b.JPG" />
+    <Content Include="Content\Front\ImageNew\1e679456e6bc00615aa0c2ca6008dae1.jpg" />
+    <Content Include="Content\Front\ImageNew\29717f871fc516abf3add5dc8b73704d.jpeg" />
+    <Content Include="Content\Front\ImageNew\31637f4a2282deb7764ee291b8cebc45.jpeg" />
+    <Content Include="Content\Front\ImageNew\3c63c7ea527d150cecaa382406b384b6.JPG" />
+    <Content Include="Content\Front\ImageNew\471abe41cf612d8400181ca699dbbfc6.jpeg" />
+    <Content Include="Content\Front\ImageNew\4aeb884d186f3bc204b1677eec72f51b.JPG" />
+    <Content Include="Content\Front\ImageNew\4b421fad19cf2ac9ede5cfb1a0ba7566.jpeg" />
+    <Content Include="Content\Front\ImageNew\4ef8b5d2f7b27747d0eed099a7c74d29.jpg" />
+    <Content Include="Content\Front\ImageNew\4f472c18c49c1996fd31c3ff9710bea8.JPG" />
+    <Content Include="Content\Front\ImageNew\52580f7c28dfd0b66c52006a14a4a50d.JPG" />
+    <Content Include="Content\Front\ImageNew\5eaac7f69657057246e22af76f01e0db.jpeg" />
+    <Content Include="Content\Front\ImageNew\607ea5d314b84c5bb9c07b66c9d29e3a.jpeg" />
+    <Content Include="Content\Front\ImageNew\62f31f9a7378e9f53195fd9f5b70de7e.JPG" />
+    <Content Include="Content\Front\ImageNew\636ce7a16bf144495f1510011e9320e5.JPG" />
+    <Content Include="Content\Front\ImageNew\75b07dc744369ab48190ad3cca2e194c.jpg" />
+    <Content Include="Content\Front\ImageNew\7cd381e1c2f339428c9ab40d32268fd8.jpeg" />
+    <Content Include="Content\Front\ImageNew\7e2e8ddafa9878a394078feeb5dbe3b5.JPG" />
+    <Content Include="Content\Front\ImageNew\814eab61699b53de2892d375f3049f4a.jpg" />
+    <Content Include="Content\Front\ImageNew\8f61a6b26155dac7f79784c98e73a0b8.JPG" />
+    <Content Include="Content\Front\ImageNew\98baebd4773df17259508b452be6f532.JPG" />
+    <Content Include="Content\Front\ImageNew\9cd317b2652d0f23da33cab357991b56.jpg" />
+    <Content Include="Content\Front\ImageNew\9cf548d53f100a9e473ac2c00a9b66ad.jpg" />
+    <Content Include="Content\Front\ImageNew\a64a44a5b8ce16667407efd298f177ea.jpg" />
+    <Content Include="Content\Front\ImageNew\a6c1d976c395ee5a35bb902a1687f1ca.JPG" />
+    <Content Include="Content\Front\ImageNew\b96929bbe8c09ea57cf31c7eedee3670.jpeg" />
+    <Content Include="Content\Front\ImageNew\cDyyloiRSzM.png" />
+    <Content Include="Content\Front\ImageNew\d47be6c46760cfadf034978a134be344.jpeg" />
+    <Content Include="Content\Front\ImageNew\d56a845868c4752d72812fd0b6f0411e.JPG" />
+    <Content Include="Content\Front\ImageNew\d7b1eddee2819986bcfc1f2d1cacdb09.JPG" />
+    <Content Include="Content\Front\ImageNew\dba265c619bb693f26f48e83e8376a30.jpeg" />
+    <Content Include="Content\Front\ImageNew\ddf5138cbcb5572b216fcca044aa9a85.JPG" />
+    <Content Include="Content\Front\ImageNew\dfd51a0cab4558ad2a3adcdcfa7ccc0a.JPG" />
+    <Content Include="Content\Front\ImageNew\duong day nong BV.JPG" />
+    <Content Include="Content\Front\ImageNew\e2523c565735404e20167a7c239dff74.JPG" />
+    <Content Include="Content\Front\ImageNew\e660d52a9a7d1dd100330f76c7956fe0.jpeg" />
+    <Content Include="Content\Front\ImageNew\e91f4c8edf79ce692eeda90b812ca3eb.jpeg" />
+    <Content Include="Content\Front\ImageNew\ee1e8f2c94d7af64c5fa8f01a4b9426f.jpeg" />
+    <Content Include="Content\Front\ImageNew\fa8da6b3a6be3e64992b6b1517e02ca7.jpeg" />
+    <Content Include="Content\Front\ImageNew\facebook_log_24.png" />
+    <Content Include="Content\Front\ImageNew\google_log_24.png" />
+    <Content Include="Content\Front\ImageNew\lendautrang.png" />
+    <Content Include="Content\Front\ImageNew\lH1ibRl5GKq.png" />
+    <Content Include="Content\Front\ImageNew\Quangninh.png" />
+    <Content Include="Content\Front\ImageNew\rss_log_24.png" />
+    <Content Include="Content\Front\ImageNew\Soyte.png" />
+    <Content Include="Content\Front\ImageNew\Trung Tam Truyen Thong GDSK QN.jpg" />
+    <Content Include="Content\Front\ImageNew\twitter_log_24.png" />
     <Content Include="Content\Front\images\14895625772342_2.jpg" />
     <Content Include="Content\Front\images\14895625899291_5.jpg" />
     <Content Include="Content\Front\images\14895625999435_6.jpg" />
@@ -4458,9 +4551,12 @@
     <Content Include="Content\Front\images\banner-02.jpg" />
     <Content Include="Content\Front\images\banner_1_2.jpg" />
     <Content Include="Content\Front\images\Dia chi.PNG" />
+    <Content Include="Content\Front\images\header.jpg" />
     <Content Include="Content\Front\images\logo.jpg" />
     <Content Include="Content\Front\images\logo.png" />
     <Content Include="Content\Front\images\nen.jpg" />
+    <Content Include="Content\Front\images\new.png" />
+    <Content Include="Content\Front\images\Quangninh.png" />
     <Content Include="Content\Front\images\thumb_14895636873453_CTzScanzso492215030317.jpg" />
     <Content Include="Content\Front\images\thumb_14895637886568_15397645_10202557676618796_2067028889_o.jpg" />
     <Content Include="Content\Front\images\thumb_14895638291876_nhiem-khuan-da-khang.jpg" />
@@ -4468,42 +4564,60 @@
     <Content Include="Content\Front\images\thumb_14895643125963_kham-benh-xa-hoi.jpg" />
     <Content Include="Content\Front\images\thumb_14895645576029_dau-bung.jpg" />
     <Content Include="Content\Front\images\thumb_14895645824249_xuat-tinh-som-2-083935414.jpg" />
+    <Content Include="Content\Front\js\all.js" />
+    <Content Include="Content\Front\js\all.min.js">
+      <DependentUpon>all.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\allmode-portal.js" />
+    <Content Include="Content\Front\js\allmode-portal.min.js">
+      <DependentUpon>allmode-portal.js</DependentUpon>
+    </Content>
     <Content Include="Content\Front\js\analytics.js" />
-    <Content Include="Content\Front\js\common.js" />
-    <Content Include="Content\Front\js\controls.js" />
-    <Content Include="Content\Front\js\divbox.js" />
-    <Content Include="Content\Front\js\divbox.min.js" />
-    <Content Include="Content\Front\js\easing.js" />
-    <Content Include="Content\Front\js\easing.min.js" />
-    <Content Include="Content\Front\js\infowindow.js" />
-    <Content Include="Content\Front\js\infowindow.min.js" />
-    <Content Include="Content\Front\js\jquery-1.8.2.min.js" />
-    <Content Include="Content\Front\js\jquery.bxslider.min.js" />
-    <Content Include="Content\Front\js\jquery.bxslider.min.min.js" />
-    <Content Include="Content\Front\js\jquery.easing.1.3.js" />
-    <Content Include="Content\Front\js\jquery.easing.1.3.min.js" />
-    <Content Include="Content\Front\js\jquery.flexslider.js" />
-    <Content Include="Content\Front\js\jquery.flexslider.min.js" />
-    <Content Include="Content\Front\js\jquery.mCustomScrollbar.concat.min.js" />
-    <Content Include="Content\Front\js\map.js" />
-    <Content Include="Content\Front\js\map.min.js" />
-    <Content Include="Content\Front\js\marker.js" />
-    <Content Include="Content\Front\js\marker.min.js" />
-    <Content Include="Content\Front\js\me.js" />
-    <Content Include="Content\Front\js\me.min.js" />
-    <Content Include="Content\Front\js\move-top.js" />
-    <Content Include="Content\Front\js\move-top.min.js" />
-    <Content Include="Content\Front\js\onion.js" />
-    <Content Include="Content\Front\js\onion.min.js" />
-    <Content Include="Content\Front\js\overlay.js" />
-    <Content Include="Content\Front\js\overlay.min.js" />
-    <Content Include="Content\Front\js\sdk.js" />
-    <Content Include="Content\Front\js\sdk.min.js" />
-    <Content Include="Content\Front\js\stats.js" />
-    <Content Include="Content\Front\js\stats.min.js" />
-    <Content Include="Content\Front\js\swfobject.js" />
-    <Content Include="Content\Front\js\swfobject.min.js" />
-    <Content Include="Content\Front\js\util.js" />
+    <Content Include="Content\Front\js\boxplus.carousel.min.js" />
+    <Content Include="Content\Front\js\boxplus.lang.min.js" />
+    <Content Include="Content\Front\js\caption.js" />
+    <Content Include="Content\Front\js\caption.min.js">
+      <DependentUpon>caption.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\core.js" />
+    <Content Include="Content\Front\js\core.min.js">
+      <DependentUpon>core.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\ga.js" />
+    <Content Include="Content\Front\js\jquery.easing.min.js" />
+    <Content Include="Content\Front\js\jquery.include.min.js" />
+    <Content Include="Content\Front\js\jquery.js" />
+    <Content Include="Content\Front\js\jquery.min.js" />
+    <Content Include="Content\Front\js\jquery.noconflict.js" />
+    <Content Include="Content\Front\js\jquery.noconflict.min.js">
+      <DependentUpon>jquery.noconflict.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\jsapi.js" />
+    <Content Include="Content\Front\js\jsmart.noconflict.js" />
+    <Content Include="Content\Front\js\jsmart.noconflict.min.js">
+      <DependentUpon>jsmart.noconflict.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\mootools-core.js" />
+    <Content Include="Content\Front\js\mootools-more.js" />
+    <Content Include="Content\Front\js\mootools-more.min.js">
+      <DependentUpon>mootools-more.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\script.js" />
+    <Content Include="Content\Front\js\script.min.js">
+      <DependentUpon>script.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\script.responsive.js" />
+    <Content Include="Content\Front\js\script.responsive.min.js">
+      <DependentUpon>script.responsive.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\sexylightbox.min.js" />
+    <Content Include="Content\Front\js\sexylightbox.min.min.js">
+      <DependentUpon>sexylightbox.min.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Front\js\transmenu_Packed.js" />
+    <Content Include="Content\Front\js\transmenu_Packed.min.js">
+      <DependentUpon>transmenu_Packed.js</DependentUpon>
+    </Content>
     <Content Include="Content\Front\Popup\jquery.popup.js" />
     <Content Include="Content\Front\Popup\jquery.popup.min.js" />
     <Content Include="Content\Front\Popup\pop.jpg" />
@@ -4608,6 +4722,7 @@
     <Content Include="Content\Images\images\image\IMG_0094-min.JPG" />
     <Content Include="Content\Images\images\image\IMG_0143-min.JPG" />
     <Content Include="Content\Images\images\image\IMG_0159-min.JPG" />
+    <Content Include="Content\Images\images\photo.jpg" />
     <Content Include="Content\Images\images\TinTuc\14895626481576_10.jpg" />
     <Content Include="Content\Images\images\TinTuc\14895626619193_11.jpg" />
     <Content Include="Content\Images\images\TinTuc\14895626813843_12.jpg" />
@@ -4670,6 +4785,7 @@
     <Content Include="Content\Images\_thumbs\Images\image\IMG_0094-min.JPG" />
     <Content Include="Content\Images\_thumbs\Images\image\IMG_0143-min.JPG" />
     <Content Include="Content\Images\_thumbs\Images\image\IMG_0159-min.JPG" />
+    <Content Include="Content\Images\_thumbs\Images\photo.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TinTuc\14895626481576_10.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TinTuc\14895626619193_11.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TinTuc\14895626813843_12.jpg" />
@@ -6203,6 +6319,7 @@
     <Content Include="Content\Backend\Vendors\ng-Gallery\dist\ng-image-gallery.min.js.map" />
     <Content Include="Content\Backend\Vendors\ng-Gallery\dist\ng-image-gallery.min.js.map.gz" />
     <Content Include="Content\Backend\Vendors\ng-Gallery\res\icons\README.md" />
+    <Content Include="Content\Front\js\jquery.min.js%281%29" />
     <None Include="package.json" />
     <None Include="Properties\PublishProfiles\TTYT.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -8380,6 +8497,10 @@
     <Content Include="Scripts\FrontEnd\bannerController.min.js">
       <DependentUpon>bannerController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\FrontEnd\categoryPostController.js" />
+    <Content Include="Scripts\FrontEnd\categoryPostController.min.js">
+      <DependentUpon>categoryPostController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\FrontEnd\commitmentController.min.js">
       <DependentUpon>commitmentController.js</DependentUpon>
     </Content>
@@ -8408,12 +8529,20 @@
     <Content Include="Scripts\FrontEnd\Home\menuController.min.js">
       <DependentUpon>menuController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\FrontEnd\Home\sideBarController.js" />
+    <Content Include="Scripts\FrontEnd\Home\sideBarController.min.js">
+      <DependentUpon>sideBarController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\FrontEnd\menuController.js" />
     <Content Include="Scripts\FrontEnd\menuController.min.js">
       <DependentUpon>menuController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\FrontEnd\Gallery\galleryController.js" />
     <Content Include="Scripts\FrontEnd\Gallery\showGalleryController.js" />
+    <Content Include="Scripts\FrontEnd\postController.js" />
+    <Content Include="Scripts\FrontEnd\postController.min.js">
+      <DependentUpon>postController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\FrontEnd\searchController.js" />
     <Content Include="Scripts\FrontEnd\searchController.min.js">
       <DependentUpon>searchController.js</DependentUpon>
@@ -8510,6 +8639,14 @@
     <Content Include="Views\Gallery2\Index.cshtml" />
     <Content Include="Views\Intro\Show.cshtml" />
     <Content Include="Views\Shared\_LayoutNoBanner.cshtml" />
+    <Content Include="Views\DanhMucBaiViet\DichVuKhachSan.cshtml" />
+    <Content Include="Views\DanhMucBaiViet\Index.cshtml" />
+    <Content Include="Views\DanhMucBaiViet\NhaHangSuKien.cshtml" />
+    <Content Include="Views\DanhMucBaiViet\PhongNghi.cshtml" />
+    <Content Include="Views\DanhMucBaiViet\Show.cshtml" />
+    <Content Include="Views\BaiViet\Index.cshtml" />
+    <Content Include="Views\BaiViet\ShowAllBaiViet.cshtml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Content\Backend\Devextreme\Lib\ts\cldr.js-event.d.ts" />

@@ -1,4 +1,7 @@
 ﻿@model XayDungMinhThanh.Models.Post
+    @{ 
+        Layout = "~/Views/Shared/_LayoutNoBanner.cshtml";
+    }
 <input type="hidden" value="@Model.id" id="idPost" />
 <div ng-controller="showServiceController">
     <div>

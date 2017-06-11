@@ -19,7 +19,7 @@ namespace XayDungMinhThanh.API
         // GET: api/PostAPI
         public IQueryable<Post> GetPosts()
         {
-            return db.Posts;
+            return db.Posts.OrderByDescending(p => p.id);
         }
 
         // GET: api/PostAPI/5
@@ -40,11 +40,38 @@ namespace XayDungMinhThanh.API
         {
             var post = db.Posts;
 
+            //Lấy tất cả bài trong danh mục
+            if (att == "category" && att != null && value != null)
+            {
+                int id = int.Parse(value);
+                var model = db.Posts.Where(p => p.featured == true && p.idCategory == id).OrderByDescending(p => p.timePublished);
+
+                return model;
+            }
+
+            //Lấy bài cho trang chủ
+            if (att == "categoryHome" && att != null && value != null)
+            {
+                int id = int.Parse(value);
+                var model = db.Posts.Where(p => p.featured == true && p.idCategory == id).OrderByDescending(p => p.timePublished);
+
+                return model;
+            }
+
+            //Lấy tin tức trang chủ
+            if (att == "tinTucHome" && att != null && value != null)
+            {
+                int id = int.Parse(value);
+                var model = db.Posts.Where(p => p.featured == true && p.idCategory == id).OrderByDescending(p => p.timePublished).Take(5);
+
+                return model;
+            }
+
             //bài viết trang chủ
             if (att == "postHome" && att != null && value != null)
             {
-                int number = int.Parse(value);
-                var model = db.Posts.Where(p => p.featured == true).OrderByDescending(p => p.timePublished).Take(number);
+                int id = int.Parse(value);
+                var model = db.Posts.Where(p => p.featured == true && p.idCategory == id).OrderByDescending(p => p.timePublished).Take(4);
 
                 return model;
             }
@@ -57,6 +84,16 @@ namespace XayDungMinhThanh.API
 
                 return model;
             }
+
+            //Lấy bài viết liên quan
+            if (att == "baiLienQuan" && att != null && value != null)
+            {
+                int id = int.Parse(value);
+                var model = db.Posts.Where(p => p.idCategory == id).OrderBy(p => p.timePublished).Take(6);
+
+                return model;
+            }
+
 
             return post;
         }
