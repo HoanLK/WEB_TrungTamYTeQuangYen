@@ -1,4 +1,4 @@
-﻿<div class="art-layout-cell art-sidebar1 clearfix">
+﻿<div class="art-layout-cell art-sidebar1 clearfix" ng-controller="sideBarController">
     <div class="art-block clearfix_mystyle">
         <div class="art-blockcontent">
             <form class="art-search" method="post">
@@ -23,7 +23,7 @@
         </div>
     </div><div class="art-block clearfix">
         <div class="art-blockheader">
-            <h3 class="t">THƯ VIỆN ĐA PHƯƠNG TIỆN</h3>
+            <p class="t" style="background-color:#1ca6bf; padding: 0.3em 0;">THƯ VIỆN ĐA PHƯƠNG TIỆN</p>
         </div>
         <div class="art-blockcontent" style="text-align:center; padding:1em 0;">
             <a href="/thu-vien-anh" class="btn btn-info" style="font-size:1.4em;color:#fff">Thư viện ảnh</a>
@@ -130,7 +130,7 @@
                     </div>*@
                 <hr style="margin-bottom: 5px;">
                 <div style="margin-bottom: 5px;">IP của bạn là: 117.4.90.25</div>
-                <div>Thời gian: 30-05-2017 19:08:29</div>
+                <div>Thời gian: {{time | date:"dd-MM-yyyy ' ' HH:mm:ss"}}</div>
             </div>
         </div>
         @*<div class="art-block clearfix">

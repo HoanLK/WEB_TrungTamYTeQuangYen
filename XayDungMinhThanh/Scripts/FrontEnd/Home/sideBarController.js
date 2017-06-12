@@ -8,18 +8,13 @@
     //$scope.videos = [];
     //$scope.thuViens = [];
     //$scope.gioiThieus = [];
+    $scope.time = new Date();
 
 
     Init();
 
     function Init() {
-        //GetServices();
-        //GetInfoCompany();
-        //GetPosts();
-        //GetBacSis();
-        //GetVideos();
-        //GetThuViens();
-        //getGioiThieus();
+        
     }
 
     //function getGioiThieus() {
@@ -85,45 +80,6 @@
     //        );
     //}
 
-    function GetBacSis() {
-        $http.get('/API/BacSiAPI?att=bacSiHome&&value=6')
-            .then(
-                function success(response) {
-                    $scope.bacSis = response.data;
-                },
-                function error(response) {
-
-                }
-            );
-    }
-
-    function GetThuViens() {
-        $http.get('/API/GalleryAPI?att=galleryHome&&value=6')
-            .then(
-                function success(response) {
-                    $scope.thuViens = response.data;
-                },
-                function error(response) {
-
-                }
-            );
-    }
-
-    function GetVideos() {
-        $http.get('/API/VideoAPI?att=videoHome&&value=6')
-            .then(
-                function success(response) {
-                    angular.forEach(response.data, function (value, index) {
-                        value.link = $sce.trustAsResourceUrl(value.link);
-                    });
-                    $scope.videos = response.data;
-                },
-                function error(response) {
-
-                }
-            );
-    }
-
     //FUNCTIONe
     function CutString(input, limit) {
         var output = angular.copy(input);
@@ -135,7 +91,5 @@
 
         return (output.substring(0, index) + "...");
     }
-
-
-
+    
 }]);
