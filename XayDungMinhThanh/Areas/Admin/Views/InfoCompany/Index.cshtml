@@ -10,7 +10,7 @@
         <ol class="breadcrumb">
             <li class="active text-uppercase" style="width: 100%">
                 <div class="col-md-4">
-                    Thông tin Công ty
+                    Thông tin Trung Tâm
                 </div>
                 <div class="col-md-8">
                     <div class="col-md-3 pull-right">
@@ -43,7 +43,13 @@
                         <div class="col-md-6">
                             <div class="form-group  " ng-class="{'has-error':!infoCompany.name, 'has-success':infoCompany.name}">
                                 <input type="text" class="form-control" id="name" name="name" ng-model="infoCompany.name">
-                                <label for="name">Tên công ty</label>
+                                <label for="name">Tên trung tâm</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group  " ng-class="{'has-error':!infoCompany.tenGiamDoc, 'has-success':infoCompany.tenGiamDoc}">
+                                <input type="text" class="form-control" id="tenGiamDoc" name="tenGiamDoc" ng-model="infoCompany.tenGiamDoc">
+                                <label for="tenGiamDoc">Tên giám đốc</label>
                             </div>
                         </div>
                         <div class="col-md-6">

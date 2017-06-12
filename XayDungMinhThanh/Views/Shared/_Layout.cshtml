@@ -164,7 +164,7 @@
                     <li class="item-583 deeper parent">
                         <a href="#">Danh Mục</a>
                         <ul>
-                            <li class="item-547"><a href="/bai-viet/danh-muc-ky-thuat-36" target="_blank">Danh Mục Kỹ Thuật</a></li>
+                            <li class="item-547"><a href="/bai-viet/danh-muc-ky-thuat-58" target="_blank">Danh Mục Kỹ Thuật</a></li>
                             <li class="item-581"><a href="/bai-viet/phac-do-dieu-tri-59">Phác Đồ Điều Trị</a></li>
                             <li class="item-584"><a href="/bai-viet/gia-vien-phi-60">Giá Viện Phí</a></li>
                             <li class="item-586"><a href="/bai-viet/gia-vat-tu-y-te-61">Giá Vật Tư Y Tế</a></li>
@@ -188,11 +188,11 @@
                     <div class="art-nostyle">
                         <!-- begin nostyle content -->
 
-                        <div class="custom">
+                        <div class="custom" ng-controller="footerController">
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
                                 <span style="font-family: &#39;times new roman&#39;, times; color: #ffffff;">
                                     <strong>
-                                        <span style="font-size: small;">TRANG THÔNG TIN ĐIỆN TỬ TRUNG TÂM Y TẾ QUẢNG YÊN</span>
+                                        <span class="text-uppercase " style="font-size: small;">TRANG THÔNG TIN ĐIỆN TỬ {{infoCompany.name}}</span>
                                     </strong>
                                 </span>
                             </p>
@@ -200,16 +200,16 @@
                                 <span style="font-size: small; color: #ffffff;">Giấy phép số:15/GP-STTTT do Sở Thông tin Truyền thông Quảng Ninh cấp ngày 22/12/2014</span>
                             </p>*@
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
-                                <span style="font-size: small; color: #ffffff;">Chịu trách nhiệm chính:  - Giám đốc Bệnh viện&nbsp;</span>
+                                <span style="font-size: small; color: #ffffff;">Chịu trách nhiệm chính: {{infoCompany.tenGiamDoc}} - Giám đốc Trung Tâm&nbsp;</span>
                             </p>
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
-                                <span style="color: #ffffff;">Địa chỉ: Tiền An - Quảng Yên - Quảng Ninh</span>
+                                <span style="color: #ffffff;">Địa chỉ: {{infoCompany.address}}</span>
                             </p>
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
-                                <span style="color: #ffffff; font-size: small;">Điện Thoại: .....</span>
+                                <span style="color: #ffffff; font-size: small;">Điện Thoại: {{infoCompany.tel}}</span>
                             </p>
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">
-                                <span style="color: #ffffff; font-size: small;">Email: <a href="" style="text-align: justify;">...</a></span>
+                                <span style="color: #ffffff; font-size: small;">Email: <a href="mailto:{{infoCompany.email}}" style="text-align: justify;">{{infoCompany.email}}</a></span>
                             </p>
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;" align="center">&nbsp;</p>
                         </div>

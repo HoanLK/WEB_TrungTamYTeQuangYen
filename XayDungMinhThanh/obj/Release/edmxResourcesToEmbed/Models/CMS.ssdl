@@ -153,6 +153,7 @@
     <Property Name="name" Type="nvarchar" MaxLength="250" />
     <Property Name="intro" Type="nvarchar" MaxLength="250" />
     <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="tenGiamDoc" Type="nvarchar(max)" />
     <Property Name="tel" Type="varchar" MaxLength="250" />
     <Property Name="email" Type="varchar" MaxLength="250" />
     <Property Name="mst" Type="varchar" MaxLength="250" />

@@ -229,6 +229,7 @@
     <Folder Include="Content\Backend\Templates\Joli\js\plugins\fileinput\fileinput\" />
     <Folder Include="Content\Backend\Templates\Material\js\core\cache\" />
     <Folder Include="Content\Backend\Vendors\angular-1.6.3\i18n\ngLocale\" />
+    <Folder Include="Content\Images\files\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\BacSiAPIController.cs" />
@@ -4727,6 +4728,9 @@
     <Content Include="Content\Images\images\TinTuc\14895626619193_11.jpg" />
     <Content Include="Content\Images\images\TinTuc\14895626813843_12.jpg" />
     <Content Include="Content\Images\images\TinTuc\14895626931507_10.jpg" />
+    <Content Include="Content\Images\images\TinTuc\DSC_8568.JPG" />
+    <Content Include="Content\Images\images\TinTuc\h1.jpg" />
+    <Content Include="Content\Images\images\TinTuc\_nh 1.JPG" />
     <Content Include="Content\Images\_thumbs\Images\bac sy\lac.jpg" />
     <Content Include="Content\Images\_thumbs\Images\bac sy\nam.jpg" />
     <Content Include="Content\Images\_thumbs\Images\bac sy\nguyen thanh vy.jpg" />
@@ -4790,6 +4794,9 @@
     <Content Include="Content\Images\_thumbs\Images\TinTuc\14895626619193_11.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TinTuc\14895626813843_12.jpg" />
     <Content Include="Content\Images\_thumbs\Images\TinTuc\14895626931507_10.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TinTuc\DSC_8568.JPG" />
+    <Content Include="Content\Images\_thumbs\Images\TinTuc\h1.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\TinTuc\_nh 1.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -8639,10 +8646,7 @@
     <Content Include="Views\Gallery2\Index.cshtml" />
     <Content Include="Views\Intro\Show.cshtml" />
     <Content Include="Views\Shared\_LayoutNoBanner.cshtml" />
-    <Content Include="Views\DanhMucBaiViet\DichVuKhachSan.cshtml" />
     <Content Include="Views\DanhMucBaiViet\Index.cshtml" />
-    <Content Include="Views\DanhMucBaiViet\NhaHangSuKien.cshtml" />
-    <Content Include="Views\DanhMucBaiViet\PhongNghi.cshtml" />
     <Content Include="Views\DanhMucBaiViet\Show.cshtml" />
     <Content Include="Views\BaiViet\Index.cshtml" />
     <Content Include="Views\BaiViet\ShowAllBaiViet.cshtml" />

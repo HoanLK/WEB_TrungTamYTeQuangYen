@@ -18,6 +18,7 @@ namespace XayDungMinhThanh.Models
         public string name { get; set; }
         public string intro { get; set; }
         public string address { get; set; }
+        public string tenGiamDoc { get; set; }
         public string tel { get; set; }
         public string email { get; set; }
         public string mst { get; set; }

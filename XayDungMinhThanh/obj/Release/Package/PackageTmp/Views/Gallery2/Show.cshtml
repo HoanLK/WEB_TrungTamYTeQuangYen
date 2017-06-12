@@ -5,6 +5,7 @@
 
 <div ng-controller="showGalleryController">
     <input type="hidden" value="@Model.id" id="idGallery" />
+    <span us-spinner="{radius:15, width:4, length: 8}"></span>
     <div class="row" style="padding-top:0.5em;">
         <div class="col-md-10 col-md-offset-1">
             <p ng-hide="images.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>

@@ -12,6 +12,7 @@
         </div>
     </article>
     <div class="item-page">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
         <article class="art-post">
             <h2 class="art-postheader">{{post.title}}</h2>
             <div class="art-postheadericons art-metadata-icons">
@@ -32,7 +33,7 @@
                         <p ng-hide="relatedPosts.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
                         <div class="extranews_older" ng-show="relatedPosts.length > 0">
                             <ul class="older">
-                                <li><a href="/bai-viet/{{value.alias}}-{{value.id}}" title="{{value.title}}" ng-repeat="(index, value) in relatedPosts">{{value.title}} - <span class="extranews_date">{{value.timePublished | date:"dd'-'MM'-'yyyy"}}</span></a></li>
+                                <li ng-repeat="(index, value) in relatedPosts"><a href="/bai-viet/{{value.alias}}-{{value.id}}" title="{{value.title}}">{{value.title}} - <span class="extranews_date">{{value.timePublished | date:"dd'-'MM'-'yyyy"}}</span></a></li>
                             </ul>
                         </div>
                     </div>

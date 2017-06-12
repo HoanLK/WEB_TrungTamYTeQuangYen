@@ -7,6 +7,7 @@
 <div ng-controller="childCategoryPostController">
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 BaiVietLienQuan">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
         <p class="TieuDe">Tất cả các bài biết</p>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 GoiY" dir-paginate="(index, value) in posts | itemsPerPage:12">
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">
