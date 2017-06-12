@@ -54,16 +54,6 @@
                             </li>
                         </ul>
                     </div>
-                    <script type="text/javascript">
-                        jQuery.noConflict();
-                        jQuery(document).ready(function($){
-                            $('#allmode208').pajinate({
-                                items_per_page : 5,
-                                nav_label_prev : 'PREV',
-                                nav_label_next : 'NEXT'
-                            });
-                        });
-                    </script>
                 </div><!-- end nostyle content -->
             </div>
             <!-- end nostyle -->
@@ -340,7 +330,7 @@
                                                             <div class="image" style="width: 100px; height: 100px">
 
                                                                 <a href="/bai-viet/{{value.alias}}-{{value.id}}" target="_self">
-                                                                    <img ng-src="{{value.image}}" width=" 100px;" height=" 100px;">
+                                                                    <img ng-src="{{value.image}}" width="100px" height="100px">
                                                                 </a>
 
                                                             </div><!--end image-->
@@ -546,14 +536,3 @@
         @Html.Partial("_Sidebar")
     </div>
 </div>
-<!-- begin nostyle -->
-<div class="art-nostyle">
-    <!-- begin nostyle content -->
-    <div class="moduletable_inner backtotop_wrp">
-        <img id="backtotop" class="backtotop" src="./benhviendkkvcampha.vn - Trang Chủ_files/lendautrang.png" style="display: none;">
-
-    </div>
-
-    <!-- end nostyle content -->
-</div>
-<!-- end nostyle -->

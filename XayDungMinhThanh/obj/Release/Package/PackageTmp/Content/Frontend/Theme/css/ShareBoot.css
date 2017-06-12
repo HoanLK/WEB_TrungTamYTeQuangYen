@@ -524,7 +524,7 @@ footer {
     width: 16px;
     height: 8px;
     background-color: #ffd600;
-    background-image: url('/Content/Frontend/Theme/images/banner/arrow.png');
+    /*background-image: url('/Content/Frontend/Theme/images/banner/arrow.png');*/
     background-position: center;
     background-size: cover;
     position: relative;

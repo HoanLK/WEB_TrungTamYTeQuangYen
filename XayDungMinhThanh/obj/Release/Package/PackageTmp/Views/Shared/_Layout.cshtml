@@ -57,22 +57,22 @@
     <link href="~/Content/Backend/Vendors/ng-Gallery/dist/ng-image-gallery.min.css" rel="stylesheet" />
 
     <!--Giao diện-->
-    <link href="~/Content/Front/css/default.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/sigplus.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/sexylightbox.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/boxplus.paging.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/boxplus.carousel.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/default(1).min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/default(2).min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/nsb-opac-inv.min.css" rel="stylesheet" />
+    @*<link href="~/Content/Front/css/default.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/sigplus.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/sexylightbox.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/boxplus.paging.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/boxplus.carousel.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/default(1).min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/default(2).min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/nsb-opac-inv.min.css" rel="stylesheet" />*@
     <link href="~/Content/Front/css/style.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/allmode-portal.min.css" rel="stylesheet" />
     <link href="~/Content/Front/css/style(1).min.css" rel="stylesheet" />
 
-    <link href="~/Content/Front/css/system.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/general.min.css" rel="stylesheet" />
+    @*<link href="~/Content/Front/css/system.min.css" rel="stylesheet" />*@
+    @*<link href="~/Content/Front/css/general.min.css" rel="stylesheet" />*@
     <link href="~/Content/Front/css/template.min.css" rel="stylesheet" />
-    <link href="~/Content/Front/css/template.responsive.min.css" rel="stylesheet" />
+    @*<link href="~/Content/Front/css/template.responsive.min.css" rel="stylesheet" />*@
 
 </head>
 <body ng-app="front">
@@ -164,7 +164,7 @@
                     <li class="item-583 deeper parent">
                         <a href="#">Danh Mục</a>
                         <ul>
-                            <li class="item-547"><a href="/bai-viet/danh-muc-ky-thuat-58" target="_blank">Danh Mục Kỹ Thuật</a></li>
+                            <li class="item-547"><a href="/bai-viet/danh-muc-ky-thuat-58">Danh Mục Kỹ Thuật</a></li>
                             <li class="item-581"><a href="/bai-viet/phac-do-dieu-tri-59">Phác Đồ Điều Trị</a></li>
                             <li class="item-584"><a href="/bai-viet/gia-vien-phi-60">Giá Viện Phí</a></li>
                             <li class="item-586"><a href="/bai-viet/gia-vat-tu-y-te-61">Giá Vật Tư Y Tế</a></li>
@@ -230,11 +230,11 @@
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
     <!--Giao diện-->
-    <script src="~/Content/Front/js/all.min.js"></script>
-    <script src="~/Content/Front/js/analytics.js"></script>
-    <script src="~/Content/Front/js/ga.js"></script>
+    @*<script src="~/Content/Front/js/all.min.js"></script>*@
+    @*<script src="~/Content/Front/js/analytics.js"></script>*@
+    @*<script src="~/Content/Front/js/ga.js"></script>*@
     @*<script src="~/Content/Front/js/mootools-core.js"></script>*@
-    <script src="~/Content/Front/js/core.min.js"></script>
+    @*<script src="~/Content/Front/js/core.min.js"></script>
     <script src="~/Content/Front/js/caption.min.js"></script>
     <script src="~/Content/Front/js/mootools-more.min.js"></script>
     <script src="~/Content/Front/js/jsapi.js"></script>
@@ -243,59 +243,12 @@
     <script src="~/Content/Front/js/jquery.include.min.js"></script>
     <script src="~/Content/Front/js/sexylightbox.min.js"></script>
     <script src="~/Content/Front/js/boxplus.carousel.min.js"></script>
-    <script src="~/Content/Front/js/boxplus.lang.min.js"></script>
+    <script src="~/Content/Front/js/boxplus.lang.min.js"></script>*@
     @*<script src="~/Content/Front/js/jquery.min.js(1)" type="text/javascript"></script>*@
-    <script src="~/Content/Front/js/allmode-portal.min.js"></script>
-    <script src="~/Content/Front/js/jsmart.noconflict.min.js"></script>
-    <script type="text/javascript">
-            window.addEvent('load', function () {
-                new JCaption('img.caption');
-            });
-            jQuery.noConflict();
-            jQuery(document).ready(function () {
-                jQuery('#backtotop').click(function () {
-                    jQuery('body,html').animate({ scrollTop: 0 }, 800);
-                });
-            });
-            jQuery(window).scroll(function () {
-                if (jQuery(this).scrollTop() != 0) {
-                    jQuery('#backtotop').fadeIn();
-                } else {
-                    jQuery('#backtotop').fadeOut();
-                }
-            });
-            if (typeof (__jQuery__) == "undefined") { var __jQuery__ = jQuery; }
-            __jQuery__(document).ready(function () {
-                SexyLightbox.initialize(__jQuery__.extend({}, { imagesdir: "/plugins/content/sigplus/engines/sexylightbox/css", color: "white" }));
-                __jQuery__("#sigplus_1ca598e5573d6204759fecf7c270566a ul:first").boxplusCarousel(__jQuery__.extend({}, { rtl: false, orientation: "horizontal", navigation: "bottom", showButtons: false, showLinks: false, showOverlayButtons: true, duration: 800, delay: 4000 })); __jQuery__.boxplusLanguage("vi", "VN");
-            });
-
-
-
-            function golink(target, id) {
-
-                var link = document.forms['jlink' + id].add.value;
-
-                switch (target) {
-                    case 'parent':
-                        window.location = link;
-                        break;
-                    case 'newwith':
-                        window.open(link);
-                        break;
-
-                    case 'newwithout':
-                        window.open(link, '', 'toolbar=no');
-                        break;
-                    default:
-                        alert('oops!!');
-                }
-
-            }
-            function keepAlive() { var myAjax = new Request({ method: "get", url: "index.php" }).send(); } window.addEvent("domready", function () { keepAlive.periodical(3600000); });
-    </script>
+    @*<script src="~/Content/Front/js/allmode-portal.min.js"></script>
+    <script src="~/Content/Front/js/jsmart.noconflict.min.js"></script>*@
     <!-- start - swMenuFree 8.3_J2.5-J3.0 javascript and CSS links -->
-    <script src="~/Content/Front/js/transmenu_Packed.min.js"></script>
+    @*<script src="~/Content/Front/js/transmenu_Packed.min.js"></script>*@
 
     <!--AngularJS-->
     <script src="~/Content/Backend/Vendors/angular-1.6.3/angular.min.js"></script>
@@ -320,22 +273,22 @@
     <script src="~/Scripts/FrontEnd/front.js"></script>
     <!--Home-->
     <script src="~/Scripts/FrontEnd/Home/homeController.min.js"></script>
-    <script src="~/Scripts/FrontEnd/Home/menuController.min.js"></script>
-    <script src="~/Scripts/FrontEnd/Home/sideBarController.min.js"></script>
+    @*<script src="~/Scripts/FrontEnd/Home/menuController.min.js"></script>
+    <script src="~/Scripts/FrontEnd/Home/sideBarController.min.js"></script>*@
 
-    <script src="~/Scripts/FrontEnd/bannerController.min.js"></script>
+    @*<script src="~/Scripts/FrontEnd/bannerController.min.js"></script>*@
 
-    <script src="~/Scripts/FrontEnd/menuController.min.js"></script>
+    @*<script src="~/Scripts/FrontEnd/menuController.min.js"></script>*@
     <script src="~/Scripts/FrontEnd/Footer/footerController.min.js"></script>
 
-    <script src="~/Scripts/FrontEnd/introController.min.js"></script>
-    <script src="~/Scripts/FrontEnd/commitmentController.min.js"></script>
+    @*<script src="~/Scripts/FrontEnd/introController.min.js"></script>
+    <script src="~/Scripts/FrontEnd/commitmentController.min.js"></script>*@
     <!--News-->
-    <script src="~/Scripts/FrontEnd/News/newsController.min.js"></script>
-    <script src="~/Scripts/FrontEnd/News/showNewsController.min.js"></script>
+    @*<script src="~/Scripts/FrontEnd/News/newsController.min.js"></script>
+    <script src="~/Scripts/FrontEnd/News/showNewsController.min.js"></script>*@
     <!--Service-->
-    <script src="~/Scripts/FrontEnd/Service/serviceController.min.js"></script>
-    <script src="~/Scripts/FrontEnd/Service/showServiceController.min.js"></script>
+    @*<script src="~/Scripts/FrontEnd/Service/serviceController.min.js"></script>
+    <script src="~/Scripts/FrontEnd/Service/showServiceController.min.js"></script>*@
     <!--Gallery-->
     <script src="~/Scripts/FrontEnd/Gallery/showGalleryController.min.js"></script>
     <script src="~/Scripts/FrontEnd/Gallery/galleryController.min.js"></script>

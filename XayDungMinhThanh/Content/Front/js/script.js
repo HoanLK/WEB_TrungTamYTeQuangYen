@@ -1077,7 +1077,7 @@ jQuery(function ($) {
         }
         header.find(".art-shapes").prepend("<div style=\"position:absolute;top:0;left:0;width:100%;height:100%;background:" + bgimage + " " + bgpositions[i] + " no-repeat\">");
     }
-    header.css('background-image', "url('images/header.png')".replace(/(url\(['"]?)/i, "$1" + path));
+    //header.css('background-image', "url('images/header.png')".replace(/(url\(['"]?)/i, "$1" + path));
     header.css('background-position', "0 0");
 });
 
