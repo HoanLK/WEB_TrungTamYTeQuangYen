@@ -12,24 +12,30 @@
     function GetPost() {
         $http.get('/API/PostAPI?att=category&&value=' + $scope.idCategory)
             .then(
-                function success(response) {
-                    $scope.posts = response.data;
-                },
-                function error(response) {
+            function success(response) {
+                $scope.posts = angular.copy(response.data);
+                angular.forEach($scope.posts, function (value, index) {
+                    if (value.content != null) {
+                        value.content = (value.content.length > 1098) ? CutString(value.content, 1000) : value.content;
+                    }
+                });
+            },
+            function error(response) {
 
-                }
+            }
             );
     }
 
-    //Lấy tất cả danh mục
-    //$http.get('/API/CategoriesAPI/')
-    //    .success(function (data) {
-    //        var categories = CategoryPost.getallCategory(data);
-    //        angular.forEach(categories, function (value, key) {
-    //            if (value.idCategoryParent == '1') {
-    //                $scope.categoryPosts.push(value);
-    //            }
-    //        });
-    //    })
+    //FUNCTIONe
+    function CutString(input, limit) {
+        var output = angular.copy(input);
+        var index = angular.copy(limit - 1);
+
+        while ((output[index] != ' ') && index < (output.length - 1)) {
+            index++;
+        }
+
+        return (output.substring(0, index) + "...");
+    }
 
 }]);

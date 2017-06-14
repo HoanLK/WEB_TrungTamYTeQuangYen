@@ -6,8 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="84d4e2582c2848d19433e54d5fb2a114" Name="Diagram1">
         <EntityTypeShape EntityType="MinhThanhModel.AspNetRole" Width="1.5" PointX="0.75" PointY="2.5" />
-        <EntityTypeShape EntityType="MinhThanhModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1" />
-        <EntityTypeShape EntityType="MinhThanhModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.75" />
+        <EntityTypeShape EntityType="MinhThanhModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="MinhThanhModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="1" />
         <EntityTypeShape EntityType="MinhThanhModel.AspNetUser" Width="1.5" PointX="3" PointY="1.125" />
         <EntityTypeShape EntityType="MinhThanhModel.BacSi" Width="1.5" PointX="0.75" PointY="6.75" />
         <EntityTypeShape EntityType="MinhThanhModel.Banner" Width="1.5" PointX="2.75" PointY="6.75" />

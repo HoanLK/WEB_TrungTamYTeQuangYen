@@ -4376,63 +4376,6 @@
     <Content Include="Content\Backend\Vendors\toastr\toastr.js" />
     <Content Include="Content\Backend\Vendors\toastr\toastr.min.css" />
     <Content Include="Content\Backend\Vendors\toastr\toastr.min.js" />
-    <Content Include="Content\Frontend\Theme\css\bootstrap.css" />
-    <Content Include="Content\Frontend\Theme\css\bootstrap.min.css">
-      <DependentUpon>bootstrap.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\css\Controls.css" />
-    <Content Include="Content\Frontend\Theme\css\Controls.min.css">
-      <DependentUpon>Controls.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\css\corev15.css" />
-    <Content Include="Content\Frontend\Theme\css\corev15.min.css">
-      <DependentUpon>corev15.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\css\jasny-bootstrap.min.css" />
-    <Content Include="Content\Frontend\Theme\css\myStyle.css" />
-    <Content Include="Content\Frontend\Theme\css\myStyle.min.css">
-      <DependentUpon>myStyle.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\css\pagelayouts15.css" />
-    <Content Include="Content\Frontend\Theme\css\pagelayouts15.min.css">
-      <DependentUpon>pagelayouts15.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\css\ShareBoot.min.css">
-      <DependentUpon>ShareBoot.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\css\Theme.min.css">
-      <DependentUpon>Theme.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\images\avatar.png" />
-    <Content Include="Content\Frontend\Theme\images\banner\19.jpg" />
-    <Content Include="Content\Frontend\Theme\images\banner\7_Edit_2.jpg" />
-    <Content Include="Content\Frontend\Theme\images\banner\arrow.png" />
-    <Content Include="Content\Frontend\Theme\images\banner\ConcreteWithoutCompromise.jpg" />
-    <Content Include="Content\Frontend\Theme\images\banner\GlobalSite-Icon.png" />
-    <Content Include="Content\Frontend\Theme\images\banner\icons-black.png" />
-    <Content Include="Content\Frontend\Theme\images\banner\icons-dim.png" />
-    <Content Include="Content\Frontend\Theme\images\banner\icons-white.png" />
-    <Content Include="Content\Frontend\Theme\images\banner\ProductDiversity.jpg" />
-    <Content Include="Content\Frontend\Theme\images\call.png" />
-    <Content Include="Content\Frontend\Theme\images\contact\home-icons.png" />
-    <Content Include="Content\Frontend\Theme\images\contact\mobile.png" />
-    <Content Include="Content\Frontend\Theme\images\logo.jpg" />
-    <Content Include="Content\Frontend\Theme\images\demo\01_CBMheader_2.jpg" />
-    <Content Include="Content\Frontend\Theme\images\global-bk.jpg" />
-    <Content Include="Content\Frontend\Theme\images\logo2.jpg" />
-    <Content Include="Content\Frontend\Theme\images\products\ConcreteSolutions.jpg" />
-    <Content Include="Content\Frontend\Theme\images\SuccessStory-SMC-CBM-HR.jpg" />
-    <Content Include="Content\Frontend\Theme\images\user.png" />
-    <Content Include="Content\Frontend\Theme\images\VC-CBM-logo.png" />
-    <Content Include="Content\Frontend\Theme\css\ShareBoot.css" />
-    <Content Include="Content\Frontend\Theme\css\Theme.css" />
-    <Content Include="Content\Frontend\Theme\js\bootstrap.js" />
-    <Content Include="Content\Frontend\Theme\js\bootstrap.min.js">
-      <DependentUpon>bootstrap.js</DependentUpon>
-    </Content>
-    <Content Include="Content\Frontend\Theme\js\jasny-bootstrap.min.js" />
-    <Content Include="Content\Frontend\Theme\js\jquery-1.8.2.min.js" />
-    <Content Include="Content\Frontend\Theme\js\jquery.placeholder.min.js" />
     <Content Include="Content\Front\css\allmode-portal.css" />
     <Content Include="Content\Front\css\allmode-portal.min.css">
       <DependentUpon>allmode-portal.css</DependentUpon>
