@@ -13,10 +13,11 @@
         <EntityTypeShape EntityType="MinhThanhModel.Banner" Width="1.5" PointX="2.75" PointY="6.75" />
         <EntityTypeShape EntityType="MinhThanhModel.CategoryPost" Width="1.5" PointX="4.75" PointY="6.75" />
         <EntityTypeShape EntityType="MinhThanhModel.Gallery" Width="1.5" PointX="6.75" PointY="6.75" />
-        <EntityTypeShape EntityType="MinhThanhModel.Image" Width="1.5" PointX="7.75" PointY="0.75" />
-        <EntityTypeShape EntityType="MinhThanhModel.InfoCompany" Width="1.5" PointX="8.75" PointY="3.75" />
-        <EntityTypeShape EntityType="MinhThanhModel.Post" Width="1.5" PointX="8.75" PointY="7.75" />
-        <EntityTypeShape EntityType="MinhThanhModel.Video" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MinhThanhModel.GiaDichVu" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MinhThanhModel.Image" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MinhThanhModel.InfoCompany" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MinhThanhModel.Post" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MinhThanhModel.Video" Width="1.5" PointX="10.75" PointY="6.75" />
         <AssociationConnector Association="MinhThanhModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
         <AssociationConnector Association="MinhThanhModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
         <AssociationConnector Association="MinhThanhModel.AspNetUserRoles" />

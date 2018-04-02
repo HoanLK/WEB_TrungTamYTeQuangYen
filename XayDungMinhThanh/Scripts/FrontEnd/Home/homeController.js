@@ -5,7 +5,10 @@
     $scope.hoatDongDoanThanhNien = [];
     $scope.giaoDucSucKhoes = [];
     $scope.tinTucNganhYs = [];
-
+    $scope.thuCamOns = [];
+    $scope.gocCuois = [];
+    $scope.danhChoNguoiBenhs = [];
+    $scope.cacQuyTrinhs = [];
 
     Init();
 
@@ -15,6 +18,10 @@
         GetHoatDongDoanThanhNien();
         GetGiaoDucSucKhoes();
         GetTinTucNganhYs();
+        GetThuCamOns();
+        GetGocCuois();
+        GetDanhChoNguoiBenhs();
+        GetCacQuyTrinhs();
     }
 
     //New
@@ -92,6 +99,74 @@
             function success(response) {
                 $scope.tinTucNganhYs = angular.copy(response.data);
                 angular.forEach($scope.tinTucNganhYs, function (value, index) {
+                    if (value.description != null) {
+                        value.description = (value.description.length > 120) ? CutString(value.description, 122) : value.description;
+                    }
+                });
+            },
+            function error(response) {
+
+            }
+            );
+    }
+
+    function GetThuCamOns() {
+        $http.get('/API/PostAPI?att=postHome&&value=54')
+            .then(
+            function success(response) {
+                $scope.thuCamOns = angular.copy(response.data);
+                angular.forEach($scope.thuCamOns, function (value, index) {
+                    if (value.description != null) {
+                        value.description = (value.description.length > 120) ? CutString(value.description, 122) : value.description;
+                    }
+                });
+            },
+            function error(response) {
+
+            }
+            );
+    }
+
+    function GetGocCuois() {
+        $http.get('/API/PostAPI?att=postHome&&value=55')
+            .then(
+            function success(response) {
+                $scope.gocCuois = angular.copy(response.data);
+                angular.forEach($scope.gocCuois, function (value, index) {
+                    if (value.description != null) {
+                        value.description = (value.description.length > 120) ? CutString(value.description, 122) : value.description;
+                    }
+                });
+            },
+            function error(response) {
+
+            }
+            );
+    }
+
+    function GetDanhChoNguoiBenhs() {
+        $http.get('/API/PostAPI?att=postHome&&value=56')
+            .then(
+            function success(response) {
+                $scope.danhChoNguoiBenhs = angular.copy(response.data);
+                angular.forEach($scope.danhChoNguoiBenhs, function (value, index) {
+                    if (value.description != null) {
+                        value.description = (value.description.length > 120) ? CutString(value.description, 122) : value.description;
+                    }
+                });
+            },
+            function error(response) {
+
+            }
+            );
+    }
+
+    function GetCacQuyTrinhs() {
+        $http.get('/API/PostAPI?att=postHome&&value=57')
+            .then(
+            function success(response) {
+                $scope.cacQuyTrinhs = angular.copy(response.data);
+                angular.forEach($scope.cacQuyTrinhs, function (value, index) {
                     if (value.description != null) {
                         value.description = (value.description.length > 120) ? CutString(value.description, 122) : value.description;
                     }

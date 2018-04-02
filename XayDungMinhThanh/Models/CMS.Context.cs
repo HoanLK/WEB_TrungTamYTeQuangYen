@@ -33,6 +33,7 @@ namespace XayDungMinhThanh.Models
         public virtual DbSet<Banner> Banners { get; set; }
         public virtual DbSet<CategoryPost> CategoryPosts { get; set; }
         public virtual DbSet<Gallery> Galleries { get; set; }
+        public virtual DbSet<GiaDichVu> GiaDichVus { get; set; }
         public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<InfoCompany> InfoCompanies { get; set; }
         public virtual DbSet<Post> Posts { get; set; }

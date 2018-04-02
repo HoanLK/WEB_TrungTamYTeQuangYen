@@ -137,6 +137,17 @@
     <Property Name="colorTextBanner" Type="varchar(max)" />
     <Property Name="note" Type="nvarchar(max)" />
   </EntityType>
+  <EntityType Name="GiaDichVu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaDV" Type="nchar" MaxLength="12" />
+    <Property Name="TenDV" Type="nvarchar(max)" />
+    <Property Name="GiaBaoHiem" Type="int" />
+    <Property Name="GiaVienPhi" Type="int" />
+    <Property Name="GiaYeuCau" Type="int" />
+  </EntityType>
   <EntityType Name="Image">
     <Key>
       <PropertyRef Name="id" />
@@ -260,6 +271,7 @@
     <EntitySet Name="Banner" EntityType="Self.Banner" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CategoryPost" EntityType="Self.CategoryPost" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gallery" EntityType="Self.Gallery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GiaDichVu" EntityType="Self.GiaDichVu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="InfoCompany" EntityType="Self.InfoCompany" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />

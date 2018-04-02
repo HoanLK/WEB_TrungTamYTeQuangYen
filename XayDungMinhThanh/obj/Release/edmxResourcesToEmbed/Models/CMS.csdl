@@ -9,6 +9,7 @@
     <EntitySet Name="Banners" EntityType="MinhThanhModel.Banner" />
     <EntitySet Name="CategoryPosts" EntityType="MinhThanhModel.CategoryPost" />
     <EntitySet Name="Galleries" EntityType="MinhThanhModel.Gallery" />
+    <EntitySet Name="GiaDichVus" EntityType="MinhThanhModel.GiaDichVu" />
     <EntitySet Name="Images" EntityType="MinhThanhModel.Image" />
     <EntitySet Name="InfoCompanies" EntityType="MinhThanhModel.InfoCompany" />
     <EntitySet Name="Posts" EntityType="MinhThanhModel.Post" />
@@ -160,6 +161,17 @@
     <Property Name="colorTitleBanner" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="colorTextBanner" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GiaDichVu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaDV" Type="String" MaxLength="12" FixedLength="true" Unicode="true" />
+    <Property Name="TenDV" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GiaBaoHiem" Type="Int32" />
+    <Property Name="GiaVienPhi" Type="Int32" />
+    <Property Name="GiaYeuCau" Type="Int32" />
   </EntityType>
   <EntityType Name="Image">
     <Key>

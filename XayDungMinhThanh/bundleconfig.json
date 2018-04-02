@@ -54,12 +54,6 @@
     ]
   },
   {
-    "outputFileName": "Scripts/FrontEnd/Home/homeController.min.js",
-    "inputFiles": [
-      "Scripts/FrontEnd/Home/homeController.js"
-    ]
-  },
-  {
     "outputFileName": "Scripts/FrontEnd/Footer/footerController.min.js",
     "inputFiles": [
       "Scripts/FrontEnd/Footer/footerController.js"
@@ -495,6 +489,30 @@
     "outputFileName": "Scripts/FrontEnd/Home/sideBarController.min.js",
     "inputFiles": [
       "Scripts/FrontEnd/Home/sideBarController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/Home/homeController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/Home/homeController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/GiaDV/giaDVController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/GiaDV/giaDVController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/BackEnd/GiaDV/modifyGiaDVController.min.js",
+    "inputFiles": [
+      "Scripts/BackEnd/GiaDV/modifyGiaDVController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/FrontEnd/bangGiaController.min.js",
+    "inputFiles": [
+      "Scripts/FrontEnd/bangGiaController.js"
     ]
   }
 ]

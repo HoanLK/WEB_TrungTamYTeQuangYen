@@ -136,6 +136,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="GiaDichVus">
+      <EntityTypeMapping TypeName="MinhThanhModel.GiaDichVu">
+        <MappingFragment StoreEntitySet="GiaDichVu">
+          <ScalarProperty Name="GiaYeuCau" ColumnName="GiaYeuCau" />
+          <ScalarProperty Name="GiaVienPhi" ColumnName="GiaVienPhi" />
+          <ScalarProperty Name="GiaBaoHiem" ColumnName="GiaBaoHiem" />
+          <ScalarProperty Name="TenDV" ColumnName="TenDV" />
+          <ScalarProperty Name="MaDV" ColumnName="MaDV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Images">
       <EntityTypeMapping TypeName="MinhThanhModel.Image">
         <MappingFragment StoreEntitySet="Image">
