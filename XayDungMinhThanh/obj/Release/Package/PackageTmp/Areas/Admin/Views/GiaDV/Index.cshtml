@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Quản lý giá dịch vụ";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="giaDVController">
+    <!--Header Section-->
+    <div class="section-header">
+        <ol class="breadcrumb">
+            <li class="active text-uppercase">Quản lý giá dịch vụ</li>
+        </ol>
+    </div>
+
+    <!--Body-->
+    <div class="section-body">
+        @*<input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />*@
+        <div class="row">
+
+        </div>
+        <hr class="ruler-lg" />
+
+        <div class="card">
+            <div class="card-body">
+                @*<span us-spinner="{radius:15, width:4, length: 8}"></span>*@
+                <!--Category Post-->
+                <div class="col-md-12 col-sm-12 col-xs-12" id="post">
+                    <div id="gridContainer" dx-data-grid="gridGiaDVs" dx-item-alias="GiaDVs">
+                        <div data-options="dxTemplate:{ name:'cellTemplateImage' }">
+                            <img ng-src="{{GiaDV.value}}" style="height: 200px" />
+                        </div>
+                    </div>
+                    <div dx-context-menu="contextMenuGiaDV"></div>
+                </div>
+
+                <!--Popup Delete-->
+                <div class="popup" dx-popup="popupDeleteGiaDV">
+                    <div data-options="dxTemplate: { name:'templateDeleteGiaDV' }">
+                        <div style="text-align: center">{{titleDeleteGiaDV}}</div>
+                        <br />
+                        <div dx-button="{ text: 'Có', icon: 'floppy', onClick: ConfirmDeleteGiaDV, type: 'success' }"></div>
+                        <div dx-button="{ text: 'Không', icon: 'clear', onClick: CancelDeleteGiaDV, type: 'danger' }"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

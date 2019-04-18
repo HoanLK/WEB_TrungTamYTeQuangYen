@@ -1,0 +1,46 @@
+﻿@model XayDungMinhThanh.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="art-layout-cell art-content clearfix" ng-controller="postController">
+    <input type="hidden" value="@Model.id" id="idPost" />
+    <article class="art-post art-messages" style="display: none;">
+        <div class="art-postcontent clearfix">
+            <div id="system-message-container">
+            </div>
+        </div>
+    </article>
+    <div class="item-page">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <article class="art-post">
+            <h2 class="art-postheader">{{post.title}}</h2>
+            <div class="art-postheadericons art-metadata-icons">
+                <span class="art-postdateicon">Được đăng {{value.timePublished | date:"'ngày' dd 'tháng' MM 'năm' yyyy"}}</span>
+            </div>
+            <div class="art-postcontent clearfix">
+                <div class="art-article" style="max-width:51.5em;">
+                    <div ng-bind-html="post.content"></div>
+                    <div style="clear:both;"></div>
+                    @*<div style="width:250;text-align:right;height:70px;">
+                            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.benhviendkkvcampha.vnhttp%3A%2F%2Fwww.benhviendkkvcampha.vn%2Ftin-tuc%2Fbai-thuoc-hay%2F379-tiem-vac-xin-viem-gan-b-cho-tre-trong-24-gio-dau-sau-sinh-tai-khoa-san-benh-vien-da-khoa-khu-vuc-cam-pha.html&amp;layout=button_count&amp;show_faces=true&amp;width=250&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:70px"></iframe>
+                        </div>*@
+                    <div class="extranews_separator"></div>
+                    <div class="extranews_box">
+                        <h2>
+                            <strong> Các bài cùng chuyên mục</strong>
+                        </h2>
+                        <p ng-hide="relatedPosts.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
+                        <div class="extranews_older" ng-show="relatedPosts.length > 0">
+                            <ul class="older">
+                                <li ng-repeat="(index, value) in relatedPosts"><a href="/bai-viet/{{value.alias}}-{{value.id}}" title="{{value.title}}">{{value.title}} - <span class="extranews_date">{{value.timePublished | date:"dd'-'MM'-'yyyy"}}</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </div>
+</div>
+@Html.Partial("_Sidebar")

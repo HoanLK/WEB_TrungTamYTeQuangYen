@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Thư viện ảnh";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="margin-bottom:1em;" ng-controller="galleryController">
+    <span us-spinner="{radius:15, width:4, length: 8}"></span>
+    <p ng-hide="thuViens.length > 0" style="text-align:center; font-size:2em; color:#f44336">Đang cập nhật</p>
+    <div ng-repeat="(index, value) in thuViens" ng-show="thuViens.length > 0" style="max-width:50%; float:left; padding:1.1em;">
+        <a href="/thu-vien-anh/{{value.alias}}-{{value.id}}" title="{{value.title}}">
+            <div class="effect-apollo text-center">
+                <img ng-src="{{value.image}}" alt="{{value.title}}" class="img-responsive">
+                <a href="/thu-vien-anh/{{value.alias}}-{{value.id}}" style="font-size:1.5em;">{{value.title}}</a>
+                <figcaption></figcaption>
+            </div>
+        </a>
+    </div>
+</div>

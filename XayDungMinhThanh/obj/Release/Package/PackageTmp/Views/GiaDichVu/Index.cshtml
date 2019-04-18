@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Bảng giá dịch vụ";
+    //Layout = "~/Views/Shared/_LayoutNoBanner.cshtml";
+}
+
+
+<div class="ourteam" id="ourteam" ng-controller="bangGiaController">
+    <span us-spinner="{radius:15, width:4, length: 8}"></span>
+    <p style="text-align: center; font-size: 2.5em; color: #f44336;">Bảng giá dịch vụ</p>
+    <br />
+    <div class="input-group" style="padding:0 9em;" >
+        <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Nhập tên dịch vụ cần tìm kiếm" ng-model="search.TenDV">
+        <div class="input-group-addon">Tìm kiếm</div>
+    </div>
+    <br />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th style="text-align:center;" class="col-xs-1">STT</th>
+                <th style="text-align:center;" class="col-xs-2">Mã DV</th>
+                <th style="text-align:center;" class="col-xs-3">Tên DV</th>
+                <th style="text-align:center;" class="col-xs-2">Giá Bảo hiểm</th>
+                <th style="text-align:center;" class="col-xs-2">Giá viện phí</th>
+                <th style="text-align:center;" class="col-xs-2">Giá yêu cầu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in giaDVs | filter:search">
+                <td style="text-align:center;">{{$index +1}}</td>
+                <td>{{item.MaDV}}</td>
+                <td>{{item.TenDV}}</td>
+                <td style="text-align:end">{{item.GiaBaoHiem | number:0}} VNĐ</td>
+                <td style="text-align:end">{{item.GiaVienPhi | number:0}} VNĐ</td>
+                <td style="text-align:end">{{item.GiaYeuCau | number:0}} VNĐ</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
